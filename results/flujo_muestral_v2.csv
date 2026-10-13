@@ -1,0 +1,12 @@
+paso,descripcion,n_paises,detalle
+1,Países en el panel integrado DSP x V-Dem x AIGS,179,
+2,Excluidos por historial corto (<12 años previos),2,"Palestine/Gaza, South Sudan"
+3,Excluidos por covariables incompletas,4,"Hong Kong, Palestine/West Bank, Somaliland, Zanzibar"
+4,Muestra elegible,173,
+5,  adoptantes documentados (AIGS),96,
+6,    con fecha (etiqueta positiva),81,
+7,    sin fecha,15,"Armenia, Bosnia and Herzegovina, Cameroon, Chile, Croatia, Ghana, Ivory Coast, Laos, Madagascar, Malta, Mauritius, Moldova, Nigeria, Slovenia, Tunisia"
+8,  sin capacidad documentada,77,
+9,    con fuentes de vigilancia fechadas (marcados),18,
+10,    sin fuentes (limpios),59,
+11,Muestra de estimación principal,158,

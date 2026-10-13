@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript."
+title: "Reproducibility package for: Identification Limits in Estimating the Effects of Algorithmic Surveillance on Digital Freedoms"
+authors:
+  - family-names: "Villegas-Ch"
+    given-names: "William"
+  - family-names: "Gutierrez"
+    given-names: "Rommel"
+  - family-names: "Garcia Ortiz"
+    given-names: "Joselin Sofia"
+  - family-names: "Govea"
+    given-names: "Jaime"
+  - family-names: "Jaramillo-Alcázar"
+    given-names: "Angel"
+  - family-names: "Beltrán-Morales"
+    given-names: "Jefferson"
+version: "1.0.0"
+date-released: "2026-10-13"
+repository-code: "https://github.com/wvillegas01/ai-surveillance-identification-reproducibility"
+license: "MIT"
+keywords:
+  - AI surveillance
+  - digital repression
+  - staggered difference-in-differences
+  - common support
+  - reproducibility

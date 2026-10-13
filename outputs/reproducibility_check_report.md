@@ -1,0 +1,101 @@
+# Reproducibility Check Report
+
+All checks passed: `True`
+
+Results folder checked: `outputs\results`
+
+## Manuscript values (41 checks)
+
+- `PASS` Countries in the integrated panel: actual=179 expected=179
+- `PASS` Dated documented adopters (treated): actual=81 expected=81
+- `PASS` Undated documented adopters: actual=15 expected=15
+- `PASS` Comparison countries: actual=77 expected=77
+- `PASS` Comparison countries with surveillance-related records: actual=18 expected=18
+- `PASS` Cohort sizes 2012-2019: actual={2012: 5, 2013: 4, 2014: 8, 2015: 7, 2016: 18, 2017: 12, 2018: 15, 2019: 12} expected={2012: 5, 2013: 4, 2014: 8, 2015: 7, 2016: 18, 2017: 12, 2018: 15, 2019: 12}
+- `PASS` Internet filtering, cohort-weighted ATT: actual=0.0124 expected=0.012
+- `PASS` Internet filtering, analytical SE: actual=0.065 expected=0.065
+- `PASS` Internet filtering, dynamic ATT: actual=-0.0006 expected=-0.001
+- `PASS` Internet filtering, joint pre-trend Wald p: actual=0.5117 expected=0.51
+- `PASS` Outcomes with p < 0.05 (primary): actual=0 expected=0
+- `PASS` Smallest p-value across outcomes: actual=0.1646 expected=0.165
+- `PASS` Arrests for online content, ATT: actual=0.0989 expected=0.099
+- `PASS` Party disinformation, ATT: actual=0.1055 expected=0.105
+- `PASS` Cohort-specific covariate window, filtering ATT: actual=0.0105 expected=0.01
+- `PASS` Covariates in levels, filtering ATT: actual=-0.1395 expected=-0.14
+- `PASS` Pre-treatment pointwise intervals excluding zero (8 outcomes): actual=4 expected=4
+- `PASS` Post-treatment pointwise intervals excluding zero (8 outcomes): actual=2 expected=2
+- `PASS` Simultaneous intervals excluding zero (8 outcomes): actual=0 expected=0
+- `PASS` Event times estimated for filtering: actual=29 expected=29
+- `PASS` Outcomes equivalent to zero within 1/4 ordinal step: actual=8 expected=8
+- `PASS` Median MDE in ordinal steps: actual=0.1553 expected=0.16
+- `PASS` Treated above the comparison maximum (log logit): actual=47 expected=47
+- `PASS` Treated outside [0.1, 0.9] (log logit): actual=33 expected=33
+- `PASS` Cohorts with complete separation: actual=2 expected=2
+- `PASS` Treated retained within observed overlap: actual=34 expected=34
+- `PASS` Doubly robust, five covariates: cohorts with estimates: actual=6 expected=6
+- `PASS` Doubly robust, five covariates: ATT: actual=-0.0462 expected=-0.046
+- `PASS` Specification analysis: configurations: actual=75 expected=75
+- `PASS` Specification analysis: negative estimates: actual=65 expected=65
+- `PASS` Specification analysis: median: actual=-0.0196 expected=-0.02
+- `PASS` Specification analysis: intervals excluding zero: actual=0 expected=0
+- `PASS` Earlier specification (cohort-weighted): actual=-0.1423 expected=-0.142
+- `PASS` Earlier specification with logarithms: actual=-0.0107 expected=-0.011
+- `PASS` TWFE filtering coefficient: actual=-0.0922 expected=-0.092
+- `PASS` TWFE negative coefficients: actual=8 expected=8
+- `PASS` Countries with operational evidence (implemented + retrospective): actual=34 expected=34
+- `PASS` Operational-evidence subset: filtering ATT: actual=-0.0264 expected=-0.026
+- `PASS` Operational-evidence subset: outcomes with p < 0.05: actual=0 expected=0
+- `PASS` Max |differences 0.1.2 - 0.3.0| across cells: actual=0.0 expected=0.0
+- `PASS` Max |differences 0.3.0 - csdid| across cells: actual=0.0 expected=0.0
+
+## Regenerated tables vs reference (49 files)
+
+- `PASS` apendice_cohortes.csv: max abs numeric difference 0.00e+00
+- `PASS` balance_agrupado.csv: max abs numeric difference 0.00e+00
+- `PASS` balance_por_cohorte.csv: max abs numeric difference 0.00e+00
+- `PASS` cifras_manuscrito.csv: max abs numeric difference 0.00e+00
+- `PASS` codificacion_estado_operativo.csv: max abs numeric difference 0.00e+00
+- `PASS` descomposicion.csv: max abs numeric difference 0.00e+00
+- `PASS` desfase_despliegue.csv: max abs numeric difference 0.00e+00
+- `PASS` desplazamiento_fechas.csv: max abs numeric difference 0.00e+00
+- `PASS` escala_latente_ordinal.csv: max abs numeric difference 0.00e+00
+- `PASS` estado_operativo_por_pais.csv: max abs numeric difference 0.00e+00
+- `PASS` estimador_covariables.csv: max abs numeric difference 0.00e+00
+- `PASS` event_study_principal_filtrado.csv: max abs numeric difference 0.00e+00
+- `PASS` event_study_todos.csv: max abs numeric difference 0.00e+00
+- `PASS` evidencias_por_pais.csv: max abs numeric difference 0.00e+00
+- `PASS` evidencias_registro_datador.csv: max abs numeric difference 0.00e+00
+- `PASS` flujo_muestral_v2.csv: max abs numeric difference 0.00e+00
+- `PASS` multiverso_v2.csv: max abs numeric difference 0.00e+00
+- `PASS` por_tecnologia.csv: max abs numeric difference 0.00e+00
+- `PASS` potencia_equivalencia_v2.csv: max abs numeric difference 0.00e+00
+- `PASS` propension_por_pais.csv: max abs numeric difference 0.00e+00
+- `PASS` reglas_por_pais.csv: max abs numeric difference 0.00e+00
+- `PASS` resumen_escenarios.csv: max abs numeric difference 0.00e+00
+- `PASS` sensibilidad_operativa.csv: max abs numeric difference 0.00e+00
+- `PASS` sin_datar_descriptivo.csv: max abs numeric difference 0.00e+00
+- `PASS` sin_datar_lista.csv: max abs numeric difference 0.00e+00
+- `PASS` soporte_por_especificacion.csv: max abs numeric difference 0.00e+00
+- `PASS` soporte_restringido.csv: max abs numeric difference 0.00e+00
+- `PASS` soporte_restringido_composicion.csv: max abs numeric difference 0.00e+00
+- `PASS` tabla_maestra_v2.csv: max abs numeric difference 0.00e+00
+- `PASS` twfe_vs_escalonado.csv: max abs numeric difference 0.00e+00
+- `PASS` validez_v2.csv: max abs numeric difference 0.00e+00
+- `PASS` ventanas_covariables.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_comparadas_corregida_dr.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_comparadas_corregida_reg.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_comparadas_enviada_dr.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_comparadas_enviada_reg.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_v012_corregida_dr.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_v012_corregida_reg.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_v012_enviada_dr.csv: max abs numeric difference 0.00e+00
+- `PASS` software\celdas_v012_enviada_reg.csv: max abs numeric difference 0.00e+00
+- `PASS` software\condiciones_dr_corregida.csv: max abs numeric difference 0.00e+00
+- `PASS` software\condiciones_dr_enviada.csv: max abs numeric difference 0.00e+00
+- `PASS` software\evento_v012_corregida_dr.csv: max abs numeric difference 0.00e+00
+- `PASS` software\evento_v012_corregida_reg.csv: max abs numeric difference 0.00e+00
+- `PASS` software\evento_v012_enviada_dr.csv: max abs numeric difference 0.00e+00
+- `PASS` software\evento_v012_enviada_reg.csv: max abs numeric difference 0.00e+00
+- `PASS` software\panel_corregida.csv: max abs numeric difference 0.00e+00
+- `PASS` software\panel_enviada.csv: max abs numeric difference 0.00e+00
+- `PASS` software\resumen_implementaciones.csv: max abs numeric difference 0.00e+00

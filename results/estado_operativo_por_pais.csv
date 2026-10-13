@@ -1,0 +1,82 @@
+country_name,country_text_id,estado_operativo
+Algeria,DZA,Contract
+Angola,AGO,Not established
+Argentina,ARG,Implemented
+Australia,AUS,Announcement
+Austria,AUT,Implemented
+Bahrain,BHR,Not established
+Bangladesh,BGD,Implemented
+Belarus,BLR,Contract
+Belgium,BEL,Announcement
+Bolivia,BOL,Not established
+Botswana,BWA,Implemented
+Brazil,BRA,Implemented
+Burma/Myanmar,MMR,Project
+Cambodia,KHM,Announcement
+Canada,CAN,Implemented
+China,CHN,Not established
+Colombia,COL,Announcement
+Czechia,CZE,Project
+Denmark,DNK,Contract
+Dominican Republic,DOM,Announcement
+Ecuador,ECU,Implemented
+Egypt,EGY,Announcement
+France,FRA,Not established
+Georgia,GEO,Implemented
+Germany,DEU,Contract
+Greece,GRC,Not established
+Hungary,HUN,Implemented
+India,IND,Implemented
+Indonesia,IDN,Not established
+Iran,IRN,Contract
+Iraq,IRQ,Announcement
+Israel,ISR,Announcement
+Italy,ITA,Not established
+Jamaica,JAM,Announcement
+Japan,JPN,Implemented
+Kazakhstan,KAZ,Implemented
+Kenya,KEN,Contract
+Kyrgyzstan,KGZ,Not established
+Lebanon,LBN,Implemented
+Malaysia,MYS,Announcement
+Mexico,MEX,Retrospective
+Mongolia,MNG,Not established
+Morocco,MAR,Not established
+Namibia,NAM,Implemented
+Netherlands,NLD,Announcement
+New Zealand,NZL,Retrospective
+North Korea,PRK,Not established
+Pakistan,PAK,Implemented
+Panama,PAN,Retrospective
+Papua New Guinea,PNG,Announcement
+Paraguay,PRY,Contract
+Peru,PER,Implemented
+Philippines,PHL,Contract
+Poland,POL,Contract
+Qatar,QAT,Implemented
+Romania,ROU,Implemented
+Russia,RUS,Implemented
+Saudi Arabia,SAU,Not established
+Serbia,SRB,Implemented
+Singapore,SGP,Implemented
+South Africa,ZAF,Not established
+South Korea,KOR,Implemented
+Spain,ESP,Implemented
+Sri Lanka,LKA,Not established
+Sweden,SWE,Implemented
+Switzerland,CHE,Not established
+Taiwan,TWN,Retrospective
+Tajikistan,TJK,Announcement
+Thailand,THA,Announcement
+Türkiye,TUR,Not established
+Uganda,UGA,Implemented
+Ukraine,UKR,Implemented
+United Arab Emirates,ARE,Contract
+United Kingdom,GBR,Implemented
+United States of America,USA,Not established
+Uruguay,URY,Implemented
+Uzbekistan,UZB,Project
+Venezuela,VEN,Not established
+Vietnam,VNM,Implemented
+Zambia,ZMB,Implemented
+Zimbabwe,ZWE,Announcement

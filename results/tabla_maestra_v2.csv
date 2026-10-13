@@ -1,0 +1,180 @@
+country_text_id,country_name,n_pre_years,sample_main,aigs_adopter,aigs_dose,tech_safecity,tech_facial,tech_smartpolicing,tech_socialmedia,vendor_china,vendor_us,region,year_min,year_surv_neg,year_surv_pos,year_p25,n_fechadas,n_vigilancia,year_2nd,n_fuentes_vig,primer_anio_vig,control_marcado,cov_completas,elegible,rol
+AFG,Afghanistan,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+ALB,Albania,16,1,0,0,0,0,0,0,0,0,1.0,2013.0,2013.0,,2013.0,1.0,0.0,,0,,False,True,True,control_limpio
+BEN,Benin,16,1,0,0,0,0,0,0,0,0,4.0,2016.0,,,2016.0,1.0,0.0,,0,,False,True,True,control_limpio
+BTN,Bhutan,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+BGR,Bulgaria,16,1,0,0,0,0,0,0,0,0,1.0,2017.0,,,2017.0,1.0,0.0,,0,,False,True,True,control_limpio
+BFA,Burkina Faso,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+BDI,Burundi,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+CPV,Cape Verde,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+CAF,Central African Republic,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+TCD,Chad,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+COM,Comoros,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+CRI,Costa Rica,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+CUB,Cuba,16,1,0,0,0,0,0,0,0,0,2.0,2014.0,2014.0,,2014.0,1.0,0.0,,0,,False,True,True,control_limpio
+COD,Democratic Republic of the Congo,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+DJI,Djibouti,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+SLV,El Salvador,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+GNQ,Equatorial Guinea,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+ERI,Eritrea,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+SWZ,Eswatini,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+ETH,Ethiopia,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+FJI,Fiji,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+GAB,Gabon,16,1,0,0,0,0,0,0,0,0,4.0,2014.0,,,2015.0,3.0,0.0,2016.0,0,,False,True,True,control_limpio
+GIN,Guinea,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+GNB,Guinea-Bissau,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+GUY,Guyana,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+HTI,Haiti,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+HND,Honduras,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+IRL,Ireland,16,1,0,0,0,0,0,0,0,0,5.0,2018.0,2018.0,,2018.0,1.0,0.0,,0,,False,True,True,control_limpio
+XKX,Kosovo,16,1,0,0,0,0,0,0,0,0,1.0,,,,,,,,0,,False,True,True,control_limpio
+LSO,Lesotho,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+LBR,Liberia,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+LBY,Libya,16,1,0,0,0,0,0,0,0,0,3.0,2018.0,,,2018.0,1.0,0.0,,0,,False,True,True,control_limpio
+MWI,Malawi,16,1,0,0,0,0,0,0,0,0,4.0,2018.0,2018.0,,2018.0,1.0,0.0,,0,,False,True,True,control_limpio
+MDV,Maldives,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+MLI,Mali,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+MRT,Mauritania,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+MNE,Montenegro,16,1,0,0,0,0,0,0,0,0,1.0,,,,,,,,0,,False,True,True,control_limpio
+NPL,Nepal,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+NIC,Nicaragua,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+NER,Niger,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+MKD,North Macedonia,16,1,0,0,0,0,0,0,0,0,1.0,,,,,,,,0,,False,True,True,control_limpio
+COG,Republic of the Congo,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+RWA,Rwanda,16,1,0,0,0,0,0,0,0,0,4.0,2016.0,,,2017.0,5.0,0.0,2017.0,0,,False,True,True,control_limpio
+STP,Sao Tome and Principe,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+SEN,Senegal,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+SYC,Seychelles,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+SLE,Sierra Leone,16,1,0,0,0,0,0,0,0,0,4.0,2019.0,2019.0,,2019.0,1.0,0.0,,0,,False,True,True,control_limpio
+SVK,Slovakia,16,1,0,0,0,0,0,0,0,0,1.0,,,,,,,,0,,False,True,True,control_limpio
+SLB,Solomon Islands,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+SOM,Somalia,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+SDN,Sudan,16,1,0,0,0,0,0,0,0,0,4.0,2019.0,2019.0,,2019.0,1.0,0.0,,0,,False,True,True,control_limpio
+SUR,Suriname,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+GMB,The Gambia,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+TLS,Timor-Leste,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+TGO,Togo,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,True,True,control_limpio
+TTO,Trinidad and Tobago,16,1,0,0,0,0,0,0,0,0,2.0,,,,,,,,0,,False,True,True,control_limpio
+TKM,Turkmenistan,16,1,0,0,0,0,0,0,0,0,1.0,,,,,,,,0,,False,True,True,control_limpio
+VUT,Vanuatu,16,1,0,0,0,0,0,0,0,0,6.0,,,,,,,,0,,False,True,True,control_limpio
+YEM,Yemen,16,1,0,0,0,0,0,0,0,0,3.0,,,,,,,,0,,False,True,True,control_limpio
+AZE,Azerbaijan,16,1,0,0,0,0,0,0,0,0,1.0,2016.0,2016.0,2016.0,2017.0,6.0,5.0,2017.0,5,2016.0,True,True,True,control_marcado
+BRB,Barbados,16,1,0,0,0,0,0,0,0,0,2.0,2018.0,2018.0,2018.0,2018.0,2.0,2.0,,2,2018.0,True,True,True,control_marcado
+CYP,Cyprus,16,1,0,0,0,0,0,0,0,0,5.0,2018.0,2018.0,2018.0,2018.0,1.0,1.0,,1,2018.0,True,True,True,control_marcado
+EST,Estonia,16,1,0,0,0,0,0,0,0,0,1.0,2016.0,2016.0,2018.0,2017.0,3.0,1.0,2018.0,1,2018.0,True,True,True,control_marcado
+FIN,Finland,16,1,0,0,0,0,0,0,0,0,5.0,2016.0,2016.0,2016.0,2016.0,1.0,1.0,,1,2016.0,True,True,True,control_marcado
+GTM,Guatemala,16,1,0,0,0,0,0,0,0,0,2.0,2019.0,2019.0,2019.0,2019.0,1.0,1.0,,1,2019.0,True,True,True,control_marcado
+ISL,Iceland,16,1,0,0,0,0,0,0,0,0,5.0,2017.0,2017.0,2017.0,2017.0,2.0,1.0,2018.0,1,2017.0,True,True,True,control_marcado
+JOR,Jordan,16,1,0,0,0,0,0,0,0,0,3.0,2018.0,2018.0,2018.0,2018.0,2.0,1.0,,1,2018.0,True,True,True,control_marcado
+KWT,Kuwait,16,1,0,0,0,0,0,0,0,0,3.0,2017.0,2017.0,2018.0,2017.0,5.0,2.0,2018.0,2,2018.0,True,True,True,control_marcado
+LVA,Latvia,16,1,0,0,0,0,0,0,0,0,1.0,2018.0,2018.0,2018.0,2018.0,1.0,1.0,,1,2018.0,True,True,True,control_marcado
+LTU,Lithuania,16,1,0,0,0,0,0,0,0,0,1.0,2019.0,2019.0,2019.0,2019.0,1.0,1.0,,1,2019.0,True,True,True,control_marcado
+LUX,Luxembourg,16,1,0,0,0,0,0,0,0,0,5.0,2017.0,2017.0,2017.0,2017.0,2.0,2.0,2018.0,2,2017.0,True,True,True,control_marcado
+MOZ,Mozambique,16,1,0,0,0,0,0,0,0,0,4.0,2014.0,2015.0,2015.0,2014.0,3.0,2.0,2015.0,2,2015.0,True,True,True,control_marcado
+NOR,Norway,16,1,0,0,0,0,0,0,0,0,5.0,2018.0,2018.0,2018.0,2018.0,3.0,2.0,,2,2018.0,True,True,True,control_marcado
+OMN,Oman,16,1,0,0,0,0,0,0,0,0,3.0,2017.0,2017.0,2017.0,2017.0,4.0,1.0,2018.0,1,2017.0,True,True,True,control_marcado
+PRT,Portugal,16,1,0,0,0,0,0,0,0,0,5.0,2013.0,2013.0,2013.0,2013.0,4.0,3.0,2014.0,3,2013.0,True,True,True,control_marcado
+SYR,Syria,16,1,0,0,0,0,0,0,0,0,3.0,2016.0,2016.0,2016.0,2016.0,2.0,1.0,2019.0,1,2016.0,True,True,True,control_marcado
+TZA,Tanzania,16,1,0,0,0,0,0,0,0,0,4.0,2016.0,2016.0,2016.0,2016.0,2.0,2.0,2018.0,2,2016.0,True,True,True,control_marcado
+PSG,Palestine/Gaza,9,0,0,0,0,0,0,0,0,0,3.0,,,,,,,,0,,False,False,False,excluido_historial_corto
+SSD,South Sudan,5,0,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,False,False,excluido_historial_corto
+HKG,Hong Kong,16,1,1,3,0,1,1,1,1,0,6.0,2014.0,2014.0,2018.0,2018.0,8.0,5.0,2018.0,5,2018.0,False,False,False,excluido_sin_covariables
+PSE,Palestine/West Bank,16,1,0,0,0,0,0,0,0,0,3.0,,,,,,,,0,,False,False,False,excluido_sin_covariables
+SML,Somaliland,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,False,False,excluido_sin_covariables
+ZZB,Zanzibar,16,1,0,0,0,0,0,0,0,0,4.0,,,,,,,,0,,False,False,False,excluido_sin_covariables
+DZA,Algeria,16,1,1,1,0,0,1,0,1,0,3.0,2017.0,2017.0,2017.0,2017.0,4.0,2.0,2018.0,2,2017.0,False,True,True,tratado_datado
+AGO,Angola,16,1,1,1,1,0,0,0,1,0,4.0,2014.0,2018.0,2018.0,2016.0,5.0,2.0,2016.0,2,2018.0,False,True,True,tratado_datado
+ARG,Argentina,16,1,1,3,0,1,1,1,1,1,2.0,2012.0,2018.0,2018.0,2018.0,9.0,7.0,2017.0,7,2018.0,False,True,True,tratado_datado
+AUS,Australia,16,1,1,4,1,1,1,1,1,1,5.0,2015.0,2015.0,2015.0,2016.0,12.0,11.0,2016.0,11,2015.0,False,True,True,tratado_datado
+AUT,Austria,16,1,1,2,0,1,1,0,0,0,5.0,2017.0,2017.0,2017.0,2018.0,7.0,5.0,2018.0,5,2017.0,False,True,True,tratado_datado
+BHR,Bahrain,16,1,1,3,0,1,1,1,0,1,3.0,2015.0,2015.0,2015.0,2015.0,4.0,4.0,2016.0,4,2015.0,False,True,True,tratado_datado
+BGD,Bangladesh,16,1,1,4,1,1,1,1,1,1,6.0,2018.0,2018.0,2018.0,2018.0,4.0,4.0,2019.0,4,2018.0,False,True,True,tratado_datado
+BLR,Belarus,16,1,1,2,0,1,1,0,0,0,1.0,2018.0,2018.0,2019.0,2018.0,4.0,3.0,2019.0,3,2019.0,False,True,True,tratado_datado
+BEL,Belgium,16,1,1,2,0,1,1,0,0,1,5.0,2019.0,2019.0,2019.0,2019.0,1.0,1.0,,1,2019.0,False,True,True,tratado_datado
+BOL,Bolivia,16,1,1,3,1,1,1,0,1,0,2.0,2014.0,2014.0,2014.0,2015.0,2.0,2.0,2019.0,2,2014.0,False,True,True,tratado_datado
+BWA,Botswana,16,1,1,2,1,0,1,0,1,0,4.0,2019.0,2019.0,2019.0,2019.0,1.0,1.0,,1,2019.0,False,True,True,tratado_datado
+BRA,Brazil,16,1,1,4,1,1,1,1,1,1,2.0,2012.0,2016.0,2012.0,2016.0,6.0,4.0,2016.0,4,2012.0,False,True,True,tratado_datado
+MMR,Burma/Myanmar,16,1,1,2,1,1,0,0,1,0,6.0,2016.0,2016.0,2019.0,2018.0,7.0,3.0,2018.0,3,2019.0,False,True,True,tratado_datado
+KHM,Cambodia,16,1,1,1,0,0,0,1,0,0,6.0,2018.0,2018.0,2018.0,2018.0,3.0,2.0,2019.0,2,2018.0,False,True,True,tratado_datado
+CAN,Canada,16,1,1,3,0,1,1,1,0,1,5.0,2016.0,2016.0,2017.0,2017.0,14.0,10.0,2017.0,10,2017.0,False,True,True,tratado_datado
+CHN,China,16,1,1,4,1,1,1,1,1,1,6.0,2016.0,2016.0,2016.0,2018.0,35.0,26.0,2017.0,26,2016.0,False,True,True,tratado_datado
+COL,Colombia,16,1,1,3,1,1,1,0,0,0,2.0,2016.0,2016.0,2016.0,2016.0,4.0,3.0,2018.0,3,2016.0,False,True,True,tratado_datado
+CZE,Czechia,16,1,1,0,0,0,0,0,0,0,1.0,2015.0,2015.0,2015.0,2016.0,5.0,4.0,2016.0,4,2015.0,False,True,True,tratado_datado
+DNK,Denmark,16,1,1,3,1,1,1,0,1,1,5.0,2017.0,2017.0,2017.0,2017.0,6.0,5.0,2018.0,5,2017.0,False,True,True,tratado_datado
+DOM,Dominican Republic,16,1,1,1,0,1,0,0,1,0,2.0,2013.0,2013.0,2013.0,2017.0,3.0,3.0,2021.0,3,2013.0,False,True,True,tratado_datado
+ECU,Ecuador,16,1,1,3,1,1,1,0,1,0,2.0,2014.0,2014.0,2014.0,2015.0,7.0,5.0,2017.0,5,2014.0,False,True,True,tratado_datado
+EGY,Egypt,16,1,1,3,0,1,1,1,1,1,3.0,2014.0,2017.0,2017.0,2019.0,9.0,4.0,2017.0,4,2017.0,False,True,True,tratado_datado
+FRA,France,16,1,1,4,1,1,1,1,1,1,5.0,2016.0,2016.0,2016.0,2017.0,12.0,10.0,2017.0,10,2016.0,False,True,True,tratado_datado
+GEO,Georgia,16,1,1,3,1,1,1,0,0,0,1.0,2017.0,2017.0,2017.0,2017.0,2.0,2.0,,2,2017.0,False,True,True,tratado_datado
+DEU,Germany,16,1,1,4,1,1,1,1,1,1,5.0,2013.0,2013.0,2013.0,2017.0,7.0,6.0,2017.0,6,2013.0,False,True,True,tratado_datado
+GRC,Greece,16,1,1,2,0,1,1,0,0,0,5.0,2016.0,2016.0,2016.0,2017.0,4.0,4.0,2018.0,4,2016.0,False,True,True,tratado_datado
+HUN,Hungary,16,1,1,2,0,1,0,1,0,0,1.0,2016.0,2016.0,2018.0,2018.0,6.0,4.0,2018.0,4,2018.0,False,True,True,tratado_datado
+IND,India,16,1,1,4,1,1,1,1,1,1,6.0,2015.0,2018.0,2015.0,2018.0,9.0,7.0,2018.0,7,2015.0,False,True,True,tratado_datado
+IDN,Indonesia,16,1,1,4,1,1,1,1,1,1,6.0,2015.0,2015.0,2015.0,2015.0,10.0,6.0,2016.0,6,2015.0,False,True,True,tratado_datado
+IRN,Iran,16,1,1,4,1,1,1,1,1,0,3.0,2012.0,2012.0,2012.0,2018.0,9.0,6.0,2018.0,6,2012.0,False,True,True,tratado_datado
+IRQ,Iraq,16,1,1,2,1,1,0,0,1,0,3.0,2019.0,2019.0,2019.0,2019.0,2.0,1.0,,1,2019.0,False,True,True,tratado_datado
+ISR,Israel,16,1,1,4,1,1,1,1,0,1,3.0,2014.0,2014.0,2014.0,2017.0,12.0,8.0,2017.0,8,2014.0,False,True,True,tratado_datado
+ITA,Italy,16,1,1,4,1,1,1,1,1,0,5.0,2016.0,2016.0,2016.0,2017.0,6.0,6.0,2017.0,6,2016.0,False,True,True,tratado_datado
+JAM,Jamaica,16,1,1,2,0,1,1,0,0,0,2.0,2016.0,2016.0,2016.0,2017.0,3.0,3.0,2018.0,3,2016.0,False,True,True,tratado_datado
+JPN,Japan,16,1,1,2,0,1,1,0,0,0,6.0,2016.0,2016.0,2016.0,2018.0,5.0,5.0,2018.0,5,2016.0,False,True,True,tratado_datado
+KAZ,Kazakhstan,16,1,1,4,1,1,1,1,1,0,1.0,2018.0,2018.0,2018.0,2018.0,8.0,7.0,2019.0,7,2018.0,False,True,True,tratado_datado
+KEN,Kenya,16,1,1,4,1,1,1,1,1,0,4.0,2014.0,2014.0,2014.0,2017.0,9.0,7.0,2017.0,7,2014.0,False,True,True,tratado_datado
+KGZ,Kyrgyzstan,16,1,1,3,1,1,1,0,1,0,1.0,2018.0,2019.0,2018.0,2018.0,2.0,2.0,2019.0,2,2018.0,False,True,True,tratado_datado
+LBN,Lebanon,16,1,1,2,1,0,1,0,0,1,3.0,2016.0,2019.0,2016.0,2018.0,4.0,1.0,2019.0,1,2016.0,False,True,True,tratado_datado
+MYS,Malaysia,16,1,1,4,1,1,1,1,1,0,6.0,2015.0,2016.0,2016.0,2016.0,8.0,4.0,2016.0,4,2016.0,False,True,True,tratado_datado
+MEX,Mexico,16,1,1,3,1,1,1,0,1,1,2.0,2016.0,2016.0,2016.0,2017.0,9.0,8.0,2017.0,8,2016.0,False,True,True,tratado_datado
+MNG,Mongolia,16,1,1,2,0,1,1,0,1,0,1.0,2014.0,2017.0,2017.0,2014.0,2.0,1.0,2017.0,1,2017.0,False,True,True,tratado_datado
+MAR,Morocco,16,1,1,4,1,1,1,1,1,0,3.0,2016.0,2016.0,2016.0,2017.0,5.0,4.0,2017.0,4,2016.0,False,True,True,tratado_datado
+NAM,Namibia,16,1,1,2,0,1,1,0,0,0,4.0,2016.0,2016.0,2016.0,2016.0,1.0,1.0,,1,2016.0,False,True,True,tratado_datado
+NLD,Netherlands,16,1,1,3,1,1,1,0,1,0,5.0,2015.0,2016.0,2015.0,2016.0,5.0,5.0,2016.0,5,2015.0,False,True,True,tratado_datado
+NZL,New Zealand,16,1,1,2,0,1,1,0,1,1,5.0,2014.0,2014.0,2014.0,2015.0,7.0,7.0,2015.0,7,2014.0,False,True,True,tratado_datado
+PRK,North Korea,16,1,1,1,0,1,0,0,0,0,6.0,2018.0,2018.0,2018.0,2018.0,4.0,4.0,2019.0,4,2018.0,False,True,True,tratado_datado
+PAK,Pakistan,16,1,1,4,1,1,1,1,1,0,6.0,2014.0,2017.0,2016.0,2016.0,8.0,7.0,2016.0,7,2016.0,False,True,True,tratado_datado
+PAN,Panama,16,1,1,3,1,1,1,0,1,1,2.0,2017.0,2017.0,2017.0,2017.0,4.0,3.0,2018.0,3,2017.0,False,True,True,tratado_datado
+PNG,Papua New Guinea,16,1,1,1,1,0,0,0,1,0,6.0,2019.0,2019.0,2019.0,2019.0,1.0,1.0,,1,2019.0,False,True,True,tratado_datado
+PRY,Paraguay,16,1,1,1,0,1,0,0,0,0,2.0,2018.0,2018.0,2018.0,2018.0,2.0,2.0,2019.0,2,2018.0,False,True,True,tratado_datado
+PER,Peru,16,1,1,2,0,1,1,0,1,0,2.0,2018.0,2018.0,2018.0,2018.0,6.0,5.0,2019.0,5,2018.0,False,True,True,tratado_datado
+PHL,Philippines,16,1,1,4,1,1,1,1,1,1,6.0,2012.0,2012.0,2012.0,2018.0,8.0,7.0,2018.0,7,2012.0,False,True,True,tratado_datado
+POL,Poland,16,1,1,1,0,1,0,0,0,0,1.0,2019.0,2019.0,2019.0,2019.0,3.0,2.0,,2,2019.0,False,True,True,tratado_datado
+QAT,Qatar,16,1,1,3,1,1,1,0,0,0,3.0,2014.0,2014.0,2014.0,2017.0,5.0,4.0,2017.0,4,2014.0,False,True,True,tratado_datado
+ROU,Romania,16,1,1,2,0,1,1,0,0,0,1.0,2016.0,2016.0,2016.0,2016.0,8.0,6.0,2017.0,6,2016.0,False,True,True,tratado_datado
+RUS,Russia,16,1,1,4,1,1,1,1,1,1,1.0,2017.0,2017.0,2017.0,2017.0,18.0,15.0,2018.0,15,2017.0,False,True,True,tratado_datado
+SAU,Saudi Arabia,16,1,1,4,1,1,1,1,1,1,3.0,2016.0,2016.0,2016.0,2017.0,14.0,3.0,2017.0,3,2016.0,False,True,True,tratado_datado
+SRB,Serbia,16,1,1,3,1,1,1,0,1,0,1.0,2019.0,2019.0,2019.0,2019.0,3.0,3.0,,3,2019.0,False,True,True,tratado_datado
+SGP,Singapore,16,1,1,3,1,1,1,0,1,1,6.0,2013.0,2013.0,2013.0,2017.0,9.0,6.0,2016.0,6,2013.0,False,True,True,tratado_datado
+ZAF,South Africa,16,1,1,4,1,1,1,1,1,0,4.0,2017.0,2019.0,2017.0,2018.0,3.0,2.0,2019.0,2,2017.0,False,True,True,tratado_datado
+KOR,South Korea,16,1,1,4,1,1,1,1,0,1,6.0,2015.0,2015.0,2015.0,2015.0,7.0,3.0,2016.0,3,2015.0,False,True,True,tratado_datado
+ESP,Spain,16,1,1,3,1,1,1,0,1,1,5.0,2014.0,2014.0,2014.0,2016.0,7.0,5.0,2016.0,5,2014.0,False,True,True,tratado_datado
+LKA,Sri Lanka,16,1,1,3,0,1,1,1,1,0,6.0,2019.0,2019.0,2019.0,2019.0,4.0,1.0,,1,2019.0,False,True,True,tratado_datado
+SWE,Sweden,16,1,1,2,0,1,1,0,0,1,5.0,2012.0,2012.0,2012.0,2018.0,6.0,4.0,2018.0,4,2012.0,False,True,True,tratado_datado
+CHE,Switzerland,16,1,1,2,1,1,0,0,0,0,5.0,2019.0,2019.0,2019.0,2019.0,1.0,1.0,,1,2019.0,False,True,True,tratado_datado
+TWN,Taiwan,16,1,1,1,0,1,0,0,0,0,6.0,2016.0,2016.0,2016.0,2016.0,3.0,2.0,2018.0,2,2016.0,False,True,True,tratado_datado
+TJK,Tajikistan,16,1,1,3,1,1,0,1,1,0,1.0,2014.0,2017.0,2017.0,2015.0,3.0,2.0,2017.0,2,2017.0,False,True,True,tratado_datado
+THA,Thailand,16,1,1,3,1,1,0,1,1,0,6.0,2018.0,2018.0,2018.0,2018.0,3.0,2.0,2019.0,2,2018.0,False,True,True,tratado_datado
+TUR,Türkiye,16,1,1,0,0,0,0,0,0,0,3.0,2014.0,2015.0,2016.0,2015.0,7.0,4.0,2015.0,4,2016.0,False,True,True,tratado_datado
+UGA,Uganda,16,1,1,3,1,1,0,1,1,0,4.0,2018.0,2018.0,2018.0,2019.0,7.0,5.0,2019.0,5,2018.0,False,True,True,tratado_datado
+UKR,Ukraine,16,1,1,2,1,1,0,0,1,1,1.0,2014.0,2014.0,2018.0,2015.0,3.0,1.0,2017.0,1,2018.0,False,True,True,tratado_datado
+ARE,United Arab Emirates,16,1,1,4,1,1,1,1,1,1,3.0,2017.0,2017.0,2017.0,2017.0,5.0,3.0,2018.0,3,2017.0,False,True,True,tratado_datado
+GBR,United Kingdom,16,1,1,4,1,1,1,1,1,1,5.0,2013.0,2013.0,2013.0,2017.0,15.0,12.0,2016.0,12,2013.0,False,True,True,tratado_datado
+USA,United States of America,16,1,1,4,1,1,1,1,0,1,5.0,2012.0,2016.0,2012.0,2018.0,38.0,29.0,2016.0,29,2012.0,False,True,True,tratado_datado
+URY,Uruguay,16,1,1,3,1,1,1,0,1,1,2.0,2016.0,2016.0,2016.0,2016.0,5.0,3.0,2018.0,3,2016.0,False,True,True,tratado_datado
+UZB,Uzbekistan,16,1,1,2,1,1,0,0,1,0,1.0,2018.0,2018.0,2018.0,2018.0,2.0,2.0,,2,2018.0,False,True,True,tratado_datado
+VEN,Venezuela,16,1,1,1,0,1,0,0,1,0,2.0,2014.0,2014.0,2014.0,2014.0,4.0,3.0,2019.0,3,2014.0,False,True,True,tratado_datado
+VNM,Vietnam,16,1,1,1,0,0,0,1,0,0,6.0,2018.0,2018.0,2018.0,2018.0,2.0,2.0,2019.0,2,2018.0,False,True,True,tratado_datado
+ZMB,Zambia,16,1,1,2,1,1,0,0,1,0,4.0,2014.0,2019.0,2019.0,2017.0,4.0,2.0,2019.0,2,2019.0,False,True,True,tratado_datado
+ZWE,Zimbabwe,16,1,1,2,0,1,1,0,1,0,4.0,2019.0,2019.0,2019.0,2019.0,1.0,1.0,,1,2019.0,False,True,True,tratado_datado
+ARM,Armenia,16,1,1,1,1,0,0,0,1,0,1.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+BIH,Bosnia and Herzegovina,16,1,1,1,1,0,0,0,1,0,1.0,2018.0,,,2018.0,4.0,0.0,,0,,False,True,True,tratado_sin_datar
+CMR,Cameroon,16,1,1,1,1,0,0,0,1,0,4.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+CHL,Chile,16,1,1,2,0,1,1,0,1,0,2.0,2015.0,2019.0,,2016.0,2.0,0.0,2019.0,0,,False,True,True,tratado_sin_datar
+HRV,Croatia,16,1,1,2,0,1,1,0,0,0,1.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+GHA,Ghana,16,1,1,2,1,0,1,0,1,0,4.0,2018.0,,,2018.0,1.0,0.0,,0,,False,True,True,tratado_sin_datar
+CIV,Ivory Coast,16,1,1,1,1,0,0,0,1,0,4.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+LAO,Laos,16,1,1,2,1,0,1,0,1,0,6.0,2014.0,,,2015.0,2.0,0.0,2019.0,0,,False,True,True,tratado_sin_datar
+MDG,Madagascar,16,1,1,1,1,0,0,0,1,0,4.0,2017.0,,,2017.0,3.0,0.0,2018.0,0,,False,True,True,tratado_sin_datar
+MLT,Malta,16,1,1,3,1,1,1,0,1,0,5.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+MUS,Mauritius,16,1,1,2,1,0,1,0,1,0,4.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+MDA,Moldova,16,1,1,1,1,0,0,0,1,0,1.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+NGA,Nigeria,16,1,1,2,1,0,0,1,1,0,4.0,2014.0,2019.0,,2014.0,4.0,0.0,2018.0,0,,False,True,True,tratado_sin_datar
+SVN,Slovenia,16,1,1,1,0,0,1,0,0,0,1.0,,,,,,,,0,,False,True,True,tratado_sin_datar
+TUN,Tunisia,16,1,1,1,1,0,0,0,1,0,3.0,,,,,,,,0,,False,True,True,tratado_sin_datar

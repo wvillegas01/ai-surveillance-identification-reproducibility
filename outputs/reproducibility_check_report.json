@@ -1,0 +1,517 @@
+{
+ "all_checks_passed": true,
+ "results_folder": "outputs/results",
+ "manuscript_checks": [
+  {
+   "check": "Countries in the integrated panel",
+   "actual": 179,
+   "expected": 179,
+   "passed": true
+  },
+  {
+   "check": "Dated documented adopters (treated)",
+   "actual": 81,
+   "expected": 81,
+   "passed": true
+  },
+  {
+   "check": "Undated documented adopters",
+   "actual": 15,
+   "expected": 15,
+   "passed": true
+  },
+  {
+   "check": "Comparison countries",
+   "actual": 77,
+   "expected": 77,
+   "passed": true
+  },
+  {
+   "check": "Comparison countries with surveillance-related records",
+   "actual": 18,
+   "expected": 18,
+   "passed": true
+  },
+  {
+   "check": "Cohort sizes 2012-2019",
+   "actual": {
+    "2012": 5,
+    "2013": 4,
+    "2014": 8,
+    "2015": 7,
+    "2016": 18,
+    "2017": 12,
+    "2018": 15,
+    "2019": 12
+   },
+   "expected": {
+    "2012": 5,
+    "2013": 4,
+    "2014": 8,
+    "2015": 7,
+    "2016": 18,
+    "2017": 12,
+    "2018": 15,
+    "2019": 12
+   },
+   "passed": true
+  },
+  {
+   "check": "Internet filtering, cohort-weighted ATT",
+   "actual": 0.0124,
+   "expected": 0.012,
+   "passed": true
+  },
+  {
+   "check": "Internet filtering, analytical SE",
+   "actual": 0.065,
+   "expected": 0.065,
+   "passed": true
+  },
+  {
+   "check": "Internet filtering, dynamic ATT",
+   "actual": -0.0006,
+   "expected": -0.001,
+   "passed": true
+  },
+  {
+   "check": "Internet filtering, joint pre-trend Wald p",
+   "actual": 0.5117,
+   "expected": 0.51,
+   "passed": true
+  },
+  {
+   "check": "Outcomes with p < 0.05 (primary)",
+   "actual": 0,
+   "expected": 0,
+   "passed": true
+  },
+  {
+   "check": "Smallest p-value across outcomes",
+   "actual": 0.1646,
+   "expected": 0.165,
+   "passed": true
+  },
+  {
+   "check": "Arrests for online content, ATT",
+   "actual": 0.0989,
+   "expected": 0.099,
+   "passed": true
+  },
+  {
+   "check": "Party disinformation, ATT",
+   "actual": 0.1055,
+   "expected": 0.105,
+   "passed": true
+  },
+  {
+   "check": "Cohort-specific covariate window, filtering ATT",
+   "actual": 0.0105,
+   "expected": 0.01,
+   "passed": true
+  },
+  {
+   "check": "Covariates in levels, filtering ATT",
+   "actual": -0.1395,
+   "expected": -0.14,
+   "passed": true
+  },
+  {
+   "check": "Pre-treatment pointwise intervals excluding zero (8 outcomes)",
+   "actual": 4,
+   "expected": 4,
+   "passed": true
+  },
+  {
+   "check": "Post-treatment pointwise intervals excluding zero (8 outcomes)",
+   "actual": 2,
+   "expected": 2,
+   "passed": true
+  },
+  {
+   "check": "Simultaneous intervals excluding zero (8 outcomes)",
+   "actual": 0,
+   "expected": 0,
+   "passed": true
+  },
+  {
+   "check": "Event times estimated for filtering",
+   "actual": 29,
+   "expected": 29,
+   "passed": true
+  },
+  {
+   "check": "Outcomes equivalent to zero within 1/4 ordinal step",
+   "actual": 8,
+   "expected": 8,
+   "passed": true
+  },
+  {
+   "check": "Median MDE in ordinal steps",
+   "actual": 0.1553,
+   "expected": 0.16,
+   "passed": true
+  },
+  {
+   "check": "Treated above the comparison maximum (log logit)",
+   "actual": 47,
+   "expected": 47,
+   "passed": true
+  },
+  {
+   "check": "Treated outside [0.1, 0.9] (log logit)",
+   "actual": 33,
+   "expected": 33,
+   "passed": true
+  },
+  {
+   "check": "Cohorts with complete separation",
+   "actual": 2,
+   "expected": 2,
+   "passed": true
+  },
+  {
+   "check": "Treated retained within observed overlap",
+   "actual": 34,
+   "expected": 34,
+   "passed": true
+  },
+  {
+   "check": "Doubly robust, five covariates: cohorts with estimates",
+   "actual": 6,
+   "expected": 6,
+   "passed": true
+  },
+  {
+   "check": "Doubly robust, five covariates: ATT",
+   "actual": -0.0462,
+   "expected": -0.046,
+   "passed": true
+  },
+  {
+   "check": "Specification analysis: configurations",
+   "actual": 75,
+   "expected": 75,
+   "passed": true
+  },
+  {
+   "check": "Specification analysis: negative estimates",
+   "actual": 65,
+   "expected": 65,
+   "passed": true
+  },
+  {
+   "check": "Specification analysis: median",
+   "actual": -0.0196,
+   "expected": -0.02,
+   "passed": true
+  },
+  {
+   "check": "Specification analysis: intervals excluding zero",
+   "actual": 0,
+   "expected": 0,
+   "passed": true
+  },
+  {
+   "check": "Earlier specification (cohort-weighted)",
+   "actual": -0.1423,
+   "expected": -0.142,
+   "passed": true
+  },
+  {
+   "check": "Earlier specification with logarithms",
+   "actual": -0.0107,
+   "expected": -0.011,
+   "passed": true
+  },
+  {
+   "check": "TWFE filtering coefficient",
+   "actual": -0.0922,
+   "expected": -0.092,
+   "passed": true
+  },
+  {
+   "check": "TWFE negative coefficients",
+   "actual": 8,
+   "expected": 8,
+   "passed": true
+  },
+  {
+   "check": "Countries with operational evidence (implemented + retrospective)",
+   "actual": 34,
+   "expected": 34,
+   "passed": true
+  },
+  {
+   "check": "Operational-evidence subset: filtering ATT",
+   "actual": -0.0264,
+   "expected": -0.026,
+   "passed": true
+  },
+  {
+   "check": "Operational-evidence subset: outcomes with p < 0.05",
+   "actual": 0,
+   "expected": 0,
+   "passed": true
+  },
+  {
+   "check": "Max |differences 0.1.2 - 0.3.0| across cells",
+   "actual": 0.0,
+   "expected": 0.0,
+   "passed": true
+  },
+  {
+   "check": "Max |differences 0.3.0 - csdid| across cells",
+   "actual": 0.0,
+   "expected": 0.0,
+   "passed": true
+  }
+ ],
+ "regenerated_vs_reference": [
+  {
+   "file": "apendice_cohortes.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "balance_agrupado.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "balance_por_cohorte.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "cifras_manuscrito.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "codificacion_estado_operativo.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "descomposicion.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "desfase_despliegue.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "desplazamiento_fechas.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "escala_latente_ordinal.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "estado_operativo_por_pais.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "estimador_covariables.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "event_study_principal_filtrado.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "event_study_todos.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "evidencias_por_pais.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "evidencias_registro_datador.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "flujo_muestral_v2.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "multiverso_v2.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "por_tecnologia.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "potencia_equivalencia_v2.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "propension_por_pais.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "reglas_por_pais.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "resumen_escenarios.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "sensibilidad_operativa.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "sin_datar_descriptivo.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "sin_datar_lista.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "soporte_por_especificacion.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "soporte_restringido.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "soporte_restringido_composicion.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "tabla_maestra_v2.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "twfe_vs_escalonado.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "validez_v2.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "ventanas_covariables.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_comparadas_corregida_dr.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_comparadas_corregida_reg.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_comparadas_enviada_dr.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_comparadas_enviada_reg.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_v012_corregida_dr.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_v012_corregida_reg.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_v012_enviada_dr.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\celdas_v012_enviada_reg.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\condiciones_dr_corregida.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\condiciones_dr_enviada.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\evento_v012_corregida_dr.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\evento_v012_corregida_reg.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\evento_v012_enviada_dr.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\evento_v012_enviada_reg.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\panel_corregida.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\panel_enviada.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "software\\resumen_implementaciones.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+country_name,region,aigs_dose,vendor_china,vendor_us,n_fechadas,year_min
+Armenia,1.0,1,1,0,,
+Bosnia and Herzegovina,1.0,1,1,0,4.0,2018.0
+Cameroon,4.0,1,1,0,,
+Chile,2.0,2,1,0,2.0,2015.0
+Croatia,1.0,2,0,0,,
+Ghana,4.0,2,1,0,1.0,2018.0
+Ivory Coast,4.0,1,1,0,,
+Laos,6.0,2,1,0,2.0,2014.0
+Madagascar,4.0,1,1,0,3.0,2017.0
+Malta,5.0,3,1,0,,
+Mauritius,4.0,2,1,0,,
+Moldova,1.0,1,1,0,,
+Nigeria,4.0,2,1,0,4.0,2014.0
+Slovenia,1.0,1,0,0,,
+Tunisia,3.0,1,1,0,,
