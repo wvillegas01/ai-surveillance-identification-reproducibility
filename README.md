@@ -2,7 +2,7 @@
 
 Manuscript: **Identification Limits in Estimating the Effects of Algorithmic Surveillance on Digital Freedoms**
 
-Package version 1.0.0 (2026-10-13). Archived release: [10.5281/zenodo.23346780](https://doi.org/10.5281/zenodo.23346780).
+Package version 1.0.1 (2026-10-13). Archived at Zenodo: concept DOI (all versions) [10.5281/zenodo.23346779](https://doi.org/10.5281/zenodo.23346779); v1.0.0 [10.5281/zenodo.23346780](https://doi.org/10.5281/zenodo.23346780).
 
 This repository contains everything needed to regenerate every table, figure and
 number reported in the manuscript and its Supplementary Material, from the raw
@@ -101,3 +101,8 @@ Third-party sources: see `LICENSE-DATA.md`.
 The intermediate comparison panels (`results/software/panel_corregida.csv` and
 `results/software/panel_enviada.csv`) are also excluded from the public archive;
 step 06a regenerates them locally from the downloaded source data.
+
+## Changelog
+
+- **1.0.1** (2026-10-13): corrected the labels of three alternative dating rules in Supplementary Table 5 and in `scripts/14_supplementary.py`. The earliest-record, second-distinct-year and 25th-percentile rules use every dated record attributed to a country and do not require a surveillance tag; v1.0.0 described the 25th-percentile rule as based on qualifying records. No data, code path or result changed; all result tables are identical to v1.0.0.
+- **1.0.0** (2026-10-13): first release.

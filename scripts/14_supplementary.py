@@ -24,9 +24,9 @@ O = lambda f: pd.read_csv(os.path.join(rc.OUT, f))
 OUTC = dict(rc.INDICADORES)
 REGLA = {"year_surv_pos": "Positive surveillance tag (primary, Eq. 1)",
          "year_surv_neg": "Smart-city records excluded",
-         "year_min": "Earliest record of any kind",
-         "year_2nd": "Second distinct year",
-         "year_p25": "25th percentile of qualifying years"}
+         "year_min": "Earliest record of any kind (no tag required)",
+         "year_2nd": "Second distinct year with a dated record (no tag required)",
+         "year_p25": "25th percentile of all dated records (no tag required)"}
 COVS = {"sin covariables": "None", "dos covariables": "Two (electoral democracy, rule of law)",
         "cinco covariables": "Five"}
 TRANS = {"log": "Logarithms", "niveles": "Levels", "-": "Not applicable"}
