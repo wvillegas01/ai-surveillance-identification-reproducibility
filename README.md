@@ -2,7 +2,7 @@
 
 Manuscript: **Identification Limits in Estimating the Effects of Algorithmic Surveillance on Digital Freedoms**
 
-Package version 1.0.0 (2026-10-13). Zenodo archive: pending first release.
+Package version 1.0.0 (2026-10-13). Archived release: [10.5281/zenodo.23346780](https://doi.org/10.5281/zenodo.23346780).
 
 This repository contains everything needed to regenerate every table, figure and
 number reported in the manuscript and its Supplementary Material, from the raw
