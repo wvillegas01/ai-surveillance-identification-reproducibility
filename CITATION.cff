@@ -14,8 +14,8 @@ authors:
     given-names: "Angel"
   - family-names: "Beltrán-Morales"
     given-names: "Jefferson"
-version: "1.0.1"
-date-released: "2026-10-13"
+version: "1.0.4"
+date-released: "2026-10-24"
 repository-code: "https://github.com/wvillegas01/ai-surveillance-identification-reproducibility"
 license: "MIT"
 keywords:
@@ -25,4 +25,14 @@ keywords:
   - common support
   - reproducibility
 
-doi: 10.5281/zenodo.23349640
+doi: 10.5281/zenodo.23346779
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23346779
+    description: Concept DOI for all versions of this package
+  - type: doi
+    value: 10.5281/zenodo.23619079
+    description: DOI for version 1.0.3
+  - type: doi
+    value: 10.5281/zenodo.23539189
+    description: DOI for version 1.0.2

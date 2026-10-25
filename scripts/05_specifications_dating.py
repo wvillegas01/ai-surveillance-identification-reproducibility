@@ -4,7 +4,9 @@ Etapa 20c — Especificaciones, incertidumbre de datacion y tecnologia.
 
 Responde a:
   R1  desplazar hacia atras la fecha de tratamiento 1, 2 y 3 anos (retraso
-      documental), en los ocho resultados.
+      documental), en los ocho resultados. Segunda ronda: se amplia a 4, 5 y 6
+      anos; con 6 la ventana de covariables queda en 2000-2005, y desplazamientos
+      mayores dejarian cohortes sin periodo previo dentro del panel.
   R1  el multiverso mezclaba el fin de panel 2025 con una principal que se
       justifica cortando en 2022. Se elimina el fin 2025: mas alla del cierre
       del inventario la condicion de comparacion no es verificable, y la misma
@@ -66,7 +68,7 @@ def main():
     L("2. DESPLAZAMIENTO DE LA FECHA (g-k), ocho resultados")
     L("   la ventana de covariables se adelanta con la primera cohorte (2000..g0-k-1)")
     des = []
-    for k in [0, 1, 2, 3]:
+    for k in [0, 1, 2, 3, 4, 5, 6]:
         d = rc.cargar(desplazar=k)
         for var, lab in rc.INDICADORES:
             r = fila(d, var)
@@ -88,16 +90,21 @@ def main():
     muestras = [("completa", {}), ("sin marcados", dict(excl_marcados=True)),
                 ("sin China", dict(sin_paises=["CHN"]))]
     mv = []
+    # la transformación log/niveles solo afecta a renta y población: si el
+    # conjunto de covariables no incluye ninguna de las dos, las dos variantes
+    # son la misma configuración y solo se estima una
+    afectadas = set("x_" + v for v in rc.LOG_VARS)
     for regla, (cl, cv), (tl, tv), (ml, mk) in itertools.product(rc.REGLAS, covs, trans,
                                                                  muestras):
-        if not cv and tl == "niveles":
-            continue   # sin covariables la transformación es irrelevante
+        transforma = bool(set(cv) & afectadas)
+        if tl == "niveles" and not transforma:
+            continue
         try:
             r = fila(rc.cargar(regla=regla, log_trans=tv, **mk), rc.PRINCIPAL, covs=cv)
         except Exception as ex:
             r = dict(ATT=np.nan, error=type(ex).__name__)
         mv.append(dict(regla_datacion=regla, covariables=cl,
-                       transformacion=tl if cv else "-", muestra=ml, fin_panel=2022, **r))
+                       transformacion=tl if transforma else "-", muestra=ml, fin_panel=2022, **r))
     mv = pd.DataFrame(mv)
     mv.to_csv(os.path.join(rc.OUT, "multiverso_v2.csv"), index=False)
     ok = mv.dropna(subset=["ATT"])

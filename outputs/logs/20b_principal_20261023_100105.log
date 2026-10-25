@@ -1,0 +1,83 @@
+[09:57:20] === 20b — estimación principal recalculada ===
+[09:57:20] 
+[09:57:20] ESCENARIO: principal | 158 países (81 tratados) | covariables 2000-2011
+[09:57:28]   Internet filtering          ATT +0.012 (EE 0.065; boot 0.069) p=0.849 | dinámico -0.001 (0.114) | previos sig 0/18 (simult 0) Wald p=0.512 | post sig 0/11 | cohortes 8
+[09:57:36]   Social media surveillance   ATT -0.014 (EE 0.083; boot 0.088) p=0.869 | dinámico -0.002 (0.138) | previos sig 1/18 (simult 0) Wald p=0.065 | post sig 0/11 | cohortes 8
+[09:57:43]   Social media censorship     ATT +0.036 (EE 0.060; boot 0.065) p=0.550 | dinámico +0.048 (0.099) | previos sig 1/18 (simult 0) Wald p=0.405 | post sig 0/11 | cohortes 8
+[09:57:50]   Internet shutdowns          ATT +0.054 (EE 0.064; boot 0.071) p=0.399 | dinámico +0.059 (0.105) | previos sig 0/18 (simult 0) Wald p=0.847 | post sig 0/11 | cohortes 8
+[09:57:56]   Social media shutdowns      ATT -0.004 (EE 0.064; boot 0.068) p=0.956 | dinámico -0.009 (0.104) | previos sig 0/18 (simult 0) Wald p=0.788 | post sig 0/11 | cohortes 8
+[09:58:03]   Arrests for online content  ATT +0.099 (EE 0.085; boot 0.094) p=0.245 | dinámico +0.179 (0.144) | previos sig 1/18 (simult 0) Wald p=0.204 | post sig 1/11 | cohortes 8
+[09:58:10]   Government disinformation   ATT +0.042 (EE 0.098; boot 0.102) p=0.669 | dinámico +0.032 (0.196) | previos sig 0/18 (simult 0) Wald p=0.110 | post sig 0/11 | cohortes 8
+[09:58:17]   Party disinformation        ATT +0.105 (EE 0.076; boot 0.079) p=0.165 | dinámico +0.103 (0.146) | previos sig 1/18 (simult 0) Wald p=0.384 | post sig 1/11 | cohortes 8
+[09:58:17] 
+[09:58:17] ESCENARIO: sin controles marcados | 140 países (81 tratados) | covariables 2000-2011
+[09:58:23]   Internet filtering          ATT +0.054 (EE 0.085; boot 0.092) p=0.522 | dinámico +0.064 (0.153) | previos sig 0/18 (simult 0) Wald p=0.590 | post sig 0/11 | cohortes 8
+[09:58:30]   Social media surveillance   ATT +0.083 (EE 0.093; boot 0.100) p=0.375 | dinámico +0.153 (0.157) | previos sig 1/18 (simult 0) Wald p=0.314 | post sig 0/11 | cohortes 8
+[09:58:37]   Social media censorship     ATT +0.064 (EE 0.081; boot 0.091) p=0.426 | dinámico +0.091 (0.131) | previos sig 1/18 (simult 0) Wald p=0.633 | post sig 0/11 | cohortes 8
+[09:58:43]   Internet shutdowns          ATT +0.107 (EE 0.091; boot 0.098) p=0.239 | dinámico +0.155 (0.150) | previos sig 0/18 (simult 0) Wald p=0.711 | post sig 0/11 | cohortes 8
+[09:58:50]   Social media shutdowns      ATT -0.014 (EE 0.083; boot 0.086) p=0.864 | dinámico +0.008 (0.126) | previos sig 0/18 (simult 0) Wald p=0.834 | post sig 0/11 | cohortes 8
+[09:58:56]   Arrests for online content  ATT +0.212 (EE 0.129; boot 0.146) p=0.099 | dinámico +0.316 (0.215) | previos sig 1/18 (simult 0) Wald p=0.463 | post sig 2/11 | cohortes 8
+[09:59:03]   Government disinformation   ATT +0.059 (EE 0.123; boot 0.123) p=0.631 | dinámico +0.063 (0.212) | previos sig 1/18 (simult 0) Wald p=0.191 | post sig 0/11 | cohortes 8
+[09:59:10]   Party disinformation        ATT +0.146 (EE 0.099; boot 0.107) p=0.141 | dinámico +0.175 (0.177) | previos sig 1/18 (simult 0) Wald p=0.535 | post sig 1/11 | cohortes 8
+[09:59:10] 
+[09:59:10] ESCENARIO: covariables en niveles | 158 países (81 tratados) | covariables 2000-2011
+[09:59:17]   Internet filtering          ATT -0.140 (EE 0.205; boot 0.283) p=0.497 | dinámico -0.196 (0.407) | previos sig 2/18 (simult 0) Wald p=0.706 | post sig 0/11 | cohortes 8
+[09:59:24]   Social media surveillance   ATT +0.049 (EE 0.233; boot 0.336) p=0.832 | dinámico +0.115 (0.446) | previos sig 0/18 (simult 0) Wald p=0.475 | post sig 0/11 | cohortes 8
+[09:59:31]   Social media censorship     ATT -0.045 (EE 0.175; boot 0.253) p=0.797 | dinámico -0.103 (0.373) | previos sig 0/18 (simult 0) Wald p=0.801 | post sig 0/11 | cohortes 8
+[09:59:38]   Internet shutdowns          ATT +0.143 (EE 0.172; boot 0.231) p=0.408 | dinámico +0.238 (0.340) | previos sig 0/18 (simult 0) Wald p=0.970 | post sig 0/11 | cohortes 8
+[09:59:46]   Social media shutdowns      ATT +0.048 (EE 0.237; boot 0.311) p=0.839 | dinámico +0.174 (0.457) | previos sig 0/18 (simult 0) Wald p=0.992 | post sig 0/11 | cohortes 8
+[09:59:53]   Arrests for online content  ATT +0.169 (EE 0.254; boot 0.391) p=0.505 | dinámico +0.293 (0.526) | previos sig 0/18 (simult 0) Wald p=0.951 | post sig 0/11 | cohortes 8
+[10:00:00]   Government disinformation   ATT -0.017 (EE 0.286; boot 0.404) p=0.953 | dinámico -0.149 (0.597) | previos sig 0/18 (simult 0) Wald p=0.914 | post sig 0/11 | cohortes 8
+[10:00:06]   Party disinformation        ATT -0.023 (EE 0.215; boot 0.273) p=0.915 | dinámico -0.103 (0.415) | previos sig 1/18 (simult 0) Wald p=0.890 | post sig 0/11 | cohortes 8
+[10:00:06] 
+[10:00:06] ESCENARIO: ventana de covariables por cohorte | 158 países (81 tratados) | covariables 2000..g-1 por cohorte
+[10:00:14]   Internet filtering          ATT +0.010 (EE 0.070; boot 0.070) p=0.881 | dinámico -0.002 (0.114) | previos sig 0/18 (simult 0) Wald p=0.468 | post sig 0/11 | cohortes 8
+[10:00:21]   Social media surveillance   ATT -0.018 (EE 0.089; boot 0.089) p=0.841 | dinámico -0.005 (0.138) | previos sig 1/18 (simult 0) Wald p=0.060 | post sig 0/11 | cohortes 8
+[10:00:28]   Social media censorship     ATT +0.034 (EE 0.066; boot 0.066) p=0.601 | dinámico +0.047 (0.100) | previos sig 1/18 (simult 0) Wald p=0.413 | post sig 0/11 | cohortes 8
+[10:00:36]   Internet shutdowns          ATT +0.056 (EE 0.072; boot 0.072) p=0.432 | dinámico +0.061 (0.106) | previos sig 0/18 (simult 0) Wald p=0.852 | post sig 0/11 | cohortes 8
+[10:00:43]   Social media shutdowns      ATT -0.000 (EE 0.069; boot 0.069) p=0.996 | dinámico -0.006 (0.104) | previos sig 0/18 (simult 0) Wald p=0.742 | post sig 0/11 | cohortes 8
+[10:00:50]   Arrests for online content  ATT +0.096 (EE 0.094; boot 0.094) p=0.312 | dinámico +0.176 (0.145) | previos sig 1/18 (simult 0) Wald p=0.197 | post sig 0/11 | cohortes 8
+[10:00:57]   Government disinformation   ATT +0.039 (EE 0.102; boot 0.102) p=0.701 | dinámico +0.030 (0.196) | previos sig 0/18 (simult 0) Wald p=0.120 | post sig 0/11 | cohortes 8
+[10:01:05]   Party disinformation        ATT +0.106 (EE 0.079; boot 0.079) p=0.180 | dinámico +0.104 (0.146) | previos sig 0/18 (simult 0) Wald p=0.405 | post sig 1/11 | cohortes 8
+[10:01:05] 
+[10:01:05] ESTUDIO DE EVENTOS PRINCIPAL (filtrado): e = -18..10 (18 previos, 11 posteriores)
+[10:01:05]   e=-18  ATT +0.013  EE 0.047  IC [-0.079, +0.106]  simult [-0.128, +0.154]  cohortes 1  países 12 
+[10:01:05]   e=-17  ATT +0.037  EE 0.044  IC [-0.050, +0.123]  simult [-0.095, +0.168]  cohortes 2  países 27 
+[10:01:05]   e=-16  ATT +0.073  EE 0.070  IC [-0.064, +0.211]  simult [-0.137, +0.283]  cohortes 3  países 39 
+[10:01:05]   e=-15  ATT -0.002  EE 0.005  IC [-0.013, +0.008]  simult [-0.019, +0.014]  cohortes 4  países 57 
+[10:01:05]   e=-14  ATT -0.006  EE 0.007  IC [-0.019, +0.007]  simult [-0.026, +0.014]  cohortes 5  países 64 
+[10:01:05]   e=-13  ATT -0.010  EE 0.007  IC [-0.024, +0.005]  simult [-0.032, +0.013]  cohortes 6  países 72 
+[10:01:05]   e=-12  ATT +0.002  EE 0.011  IC [-0.019, +0.023]  simult [-0.030, +0.034]  cohortes 7  países 76 
+[10:01:05]   e=-11  ATT -0.004  EE 0.010  IC [-0.024, +0.016]  simult [-0.034, +0.027]  cohortes 8  países 81 
+[10:01:05]   e=-10  ATT -0.002  EE 0.010  IC [-0.022, +0.017]  simult [-0.032, +0.028]  cohortes 8  países 81 
+[10:01:05]   e= -9  ATT +0.002  EE 0.019  IC [-0.034, +0.039]  simult [-0.053, +0.058]  cohortes 8  países 81 
+[10:01:05]   e= -8  ATT -0.011  EE 0.024  IC [-0.057, +0.036]  simult [-0.082, +0.060]  cohortes 8  países 81 
+[10:01:05]   e= -7  ATT +0.005  EE 0.029  IC [-0.052, +0.062]  simult [-0.082, +0.092]  cohortes 8  países 81 
+[10:01:05]   e= -6  ATT +0.023  EE 0.030  IC [-0.035, +0.082]  simult [-0.066, +0.113]  cohortes 8  países 81 
+[10:01:05]   e= -5  ATT -0.050  EE 0.034  IC [-0.116, +0.016]  simult [-0.151, +0.051]  cohortes 8  países 81 
+[10:01:05]   e= -4  ATT -0.022  EE 0.024  IC [-0.068, +0.024]  simult [-0.093, +0.049]  cohortes 8  países 81 
+[10:01:05]   e= -3  ATT +0.011  EE 0.031  IC [-0.050, +0.072]  simult [-0.082, +0.104]  cohortes 8  países 81 
+[10:01:05]   e= -2  ATT +0.020  EE 0.021  IC [-0.022, +0.061]  simult [-0.044, +0.083]  cohortes 8  países 81 
+[10:01:05]   e= -1  ATT -0.017  EE 0.024  IC [-0.065, +0.030]  simult [-0.089, +0.054]  cohortes 8  países 81 
+[10:01:05]   e= +0  ATT +0.005  EE 0.018  IC [-0.031, +0.041]  simult [-0.047, +0.057]  cohortes 8  países 81 
+[10:01:05]   e= +1  ATT +0.011  EE 0.035  IC [-0.058, +0.080]  simult [-0.089, +0.111]  cohortes 8  países 81 
+[10:01:05]   e= +2  ATT -0.019  EE 0.057  IC [-0.131, +0.093]  simult [-0.182, +0.143]  cohortes 8  países 81 
+[10:01:05]   e= +3  ATT +0.029  EE 0.074  IC [-0.116, +0.173]  simult [-0.180, +0.238]  cohortes 8  países 81 
+[10:01:05]   e= +4  ATT +0.013  EE 0.081  IC [-0.145, +0.172]  simult [-0.216, +0.243]  cohortes 7  países 69 
+[10:01:05]   e= +5  ATT +0.016  EE 0.109  IC [-0.199, +0.231]  simult [-0.295, +0.327]  cohortes 6  países 54 
+[10:01:05]   e= +6  ATT +0.082  EE 0.124  IC [-0.161, +0.324]  simult [-0.269, +0.433]  cohortes 5  países 42 
+[10:01:05]   e= +7  ATT +0.009  EE 0.175  IC [-0.334, +0.352]  simult [-0.487, +0.505]  cohortes 4  países 24 
+[10:01:05]   e= +8  ATT -0.024  EE 0.202  IC [-0.419, +0.372]  simult [-0.597, +0.549]  cohortes 3  países 17 
+[10:01:05]   e= +9  ATT +0.063  EE 0.284  IC [-0.495, +0.620]  simult [-0.744, +0.870]  cohortes 2  países 9 
+[10:01:05]   e=+10  ATT -0.191  EE 0.267  IC [-0.715, +0.332]  simult [-0.949, +0.567]  cohortes 1  países 5 
+[10:01:05] 
+[10:01:05] VERIFICACIÓN: diferencia máxima paquete vs manual en las celdas: 5.22e-15
+[10:01:05] CORRECCIÓN MÚLTIPLE (ocho resultados, escenario principal)
+[10:01:05]   Internet filtering          p=0.849  Bonferroni=1.000  BH=0.956
+[10:01:05]   Social media surveillance   p=0.869  Bonferroni=1.000  BH=0.956
+[10:01:05]   Social media censorship     p=0.550  Bonferroni=1.000  BH=0.956
+[10:01:05]   Internet shutdowns          p=0.399  Bonferroni=1.000  BH=0.956
+[10:01:05]   Social media shutdowns      p=0.956  Bonferroni=1.000  BH=0.956
+[10:01:05]   Arrests for online content  p=0.245  Bonferroni=1.000  BH=0.956
+[10:01:05]   Government disinformation   p=0.669  Bonferroni=1.000  BH=0.956
+[10:01:05]   Party disinformation        p=0.165  Bonferroni=1.000  BH=0.956

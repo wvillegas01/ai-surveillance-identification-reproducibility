@@ -1,0 +1,14 @@
+[10:43:29] === 20g — tabla de evidencias ===
+[10:43:29]   adoptantes datados: 81 | registros con etiqueta positiva: 383
+[10:43:29]   registros que fijan la fecha: 102 en 81 países (empates en el mismo año: 15 países)
+[10:43:29]   tipo de documento de los registros que fijan la fecha:
+[10:43:29]     webpage                45
+[10:43:29]     blogPost               23
+[10:43:29]     journalArticle         15
+[10:43:29]     newspaperArticle       13
+[10:43:29]     magazineArticle        3
+[10:43:29]     report                 2
+[10:43:29]     conferencePaper        1
+[10:43:29]   registros datadores que cubren >1 país (informes multipaís): 25
+[10:43:29]   registros datadores sin URL: 1
+[10:43:29]   -> plantilla codificacion_estado_operativo.xlsx

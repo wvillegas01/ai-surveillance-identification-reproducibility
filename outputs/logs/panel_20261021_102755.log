@@ -1,0 +1,19 @@
+[10:27:49] === Etapa 03 — construccion del panel analitico ===
+[10:27:49]     inicio comun=2016 | periodo previo hasta 2015 | min anios previos=12
+[10:27:49] 1. AIGS — tratamiento
+[10:27:49]   -> aigs_corrections_log.csv (2 filas x 5 cols)
+[10:27:49]    universo hoja 2: 179 paises, 97 adoptantes
+[10:27:49]    adoptantes con detalle: 97  (coherentes con la bandera)
+[10:27:49]   -> proveedores_frecuencia.csv (31 filas x 2 cols)
+[10:27:49] 2. DSP v8 — dependientes
+[10:27:49]    4636 celdas pais-anio | 179 paises
+[10:27:49] 3. V-Dem v16 — controles
+[10:27:54]    4636 celdas pais-anio en 2000-2025
+[10:27:54] 4. Cruce y construccion del panel
+[10:27:54]    AIGS -> DSP: 179/179 paises resueltos
+[10:27:54]    panel: 4636 filas | 179 paises | 97 adoptantes
+[10:27:54]    muestra principal: 177 paises (excluidos por <12 anios previos: Palestine/Gaza, South Sudan)
+[10:27:54]    coherencia dosis-tecnologias: correcta en las 4636 filas
+[10:27:55]   -> panel_analitico.csv (4636 filas x 86 cols)
+[10:27:55] 6. Resumen del panel
+[10:27:55]   -> panel_resumen.csv (86 filas x 6 cols)

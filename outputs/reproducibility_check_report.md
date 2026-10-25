@@ -4,7 +4,7 @@ All checks passed: `True`
 
 Results folder checked: `outputs\results`
 
-## Manuscript values (41 checks)
+## Manuscript values (54 checks)
 
 - `PASS` Countries in the integrated panel: actual=179 expected=179
 - `PASS` Dated documented adopters (treated): actual=81 expected=81
@@ -34,10 +34,16 @@ Results folder checked: `outputs\results`
 - `PASS` Treated retained within observed overlap: actual=34 expected=34
 - `PASS` Doubly robust, five covariates: cohorts with estimates: actual=6 expected=6
 - `PASS` Doubly robust, five covariates: ATT: actual=-0.0462 expected=-0.046
-- `PASS` Specification analysis: configurations: actual=75 expected=75
-- `PASS` Specification analysis: negative estimates: actual=65 expected=65
-- `PASS` Specification analysis: median: actual=-0.0196 expected=-0.02
+- `PASS` Specification analysis: configurations: actual=60 expected=60
+- `PASS` Specification analysis: negative estimates: actual=51 expected=51
+- `PASS` Specification analysis: median: actual=-0.0219 expected=-0.022
 - `PASS` Specification analysis: intervals excluding zero: actual=0 expected=0
+- `PASS` Support-restricted equivalence, quarter step: actual=5 expected=5
+- `PASS` Support-restricted equivalence, fifth step: actual=3 expected=3
+- `PASS` Support-restricted equivalence, tenth SD: actual=0 expected=0
+- `PASS` Support-restricted SE ratio, median: actual=2.4828 expected=2.48
+- `PASS` Support-restricted bootstrap: usable replications: actual=2000 expected=2000
+- `PASS` Support-restricted bootstrap: replications losing a cohort: actual=1 expected=1
 - `PASS` Earlier specification (cohort-weighted): actual=-0.1423 expected=-0.142
 - `PASS` Earlier specification with logarithms: actual=-0.0107 expected=-0.011
 - `PASS` TWFE filtering coefficient: actual=-0.0922 expected=-0.092
@@ -45,19 +51,29 @@ Results folder checked: `outputs\results`
 - `PASS` Countries with operational evidence (implemented + retrospective): actual=34 expected=34
 - `PASS` Operational-evidence subset: filtering ATT: actual=-0.0264 expected=-0.026
 - `PASS` Operational-evidence subset: outcomes with p < 0.05: actual=0 expected=0
+- `PASS` Treatment-date shifts estimated (years earlier): actual=[1, 2, 3, 4, 5, 6] expected=[1, 2, 3, 4, 5, 6]
+- `PASS` Date shifts of one to six years: outcomes with p < 0.05: actual=0 expected=0
+- `PASS` Lag-informed dates: treated countries: actual=79 expected=79
+- `PASS` Lag-informed dates: filtering ATT: actual=0.0138 expected=0.014
+- `PASS` Countries with stated earlier deployment excluded: treated countries: actual=75 expected=75
+- `PASS` Countries with stated earlier deployment excluded: filtering ATT: actual=0.02 expected=0.02
+- `PASS` Lag-informed analyses: outcomes with p < 0.05: actual=0 expected=0
 - `PASS` Max |differences 0.1.2 - 0.3.0| across cells: actual=0.0 expected=0.0
 - `PASS` Max |differences 0.3.0 - csdid| across cells: actual=0.0 expected=0.0
 
-## Regenerated tables vs reference (49 files)
+## Regenerated tables vs reference (53 files)
 
 - `PASS` apendice_cohortes.csv: max abs numeric difference 0.00e+00
 - `PASS` balance_agrupado.csv: max abs numeric difference 0.00e+00
 - `PASS` balance_por_cohorte.csv: max abs numeric difference 0.00e+00
+- `PASS` bootstrap_auditoria.csv: max abs numeric difference 0.00e+00
 - `PASS` cifras_manuscrito.csv: max abs numeric difference 0.00e+00
 - `PASS` codificacion_estado_operativo.csv: max abs numeric difference 0.00e+00
 - `PASS` descomposicion.csv: max abs numeric difference 0.00e+00
 - `PASS` desfase_despliegue.csv: max abs numeric difference 0.00e+00
+- `PASS` desfase_informado.csv: max abs numeric difference 0.00e+00
 - `PASS` desplazamiento_fechas.csv: max abs numeric difference 0.00e+00
+- `PASS` equivalencia_soporte_restringido.csv: max abs numeric difference 0.00e+00
 - `PASS` escala_latente_ordinal.csv: max abs numeric difference 0.00e+00
 - `PASS` estado_operativo_por_pais.csv: max abs numeric difference 0.00e+00
 - `PASS` estimador_covariables.csv: max abs numeric difference 0.00e+00
@@ -70,6 +86,7 @@ Results folder checked: `outputs\results`
 - `PASS` por_tecnologia.csv: max abs numeric difference 0.00e+00
 - `PASS` potencia_equivalencia_v2.csv: max abs numeric difference 0.00e+00
 - `PASS` propension_por_pais.csv: max abs numeric difference 0.00e+00
+- `PASS` referencia_margenes.csv: max abs numeric difference 0.00e+00
 - `PASS` reglas_por_pais.csv: max abs numeric difference 0.00e+00
 - `PASS` resumen_escenarios.csv: max abs numeric difference 0.00e+00
 - `PASS` sensibilidad_operativa.csv: max abs numeric difference 0.00e+00

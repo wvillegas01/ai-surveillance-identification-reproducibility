@@ -7,7 +7,13 @@ sistema en funcionamiento (Implemented o Retrospective en 20m) y compara con
 la especificacion principal. Tambien resume el desfase entre el ano de
 despliegue que declaran las fuentes y el primer ano documentado.
 
-Salidas: sensibilidad_operativa.csv, desfase_despliegue.csv
+Segunda ronda (Revisor 1): sensibilidad informada por el desfase. Los paises
+cuya fuente declara un despliegue anterior al primer ano documentado se redatan
+con ese ano; los que quedarian antes de la primera cohorte no cumplen el periodo
+previo minimo (2000-2011) y se excluyen. Variante: excluir todos los paises con
+desfase.
+
+Salidas: sensibilidad_operativa.csv, desfase_despliegue.csv, desfase_informado.csv
 Uso:  python scripts/11_operational_sensitivity.py
 """
 import os, re
@@ -53,6 +59,38 @@ def main():
     for k, v in g[g != 0].items():
         L("    %-14s %+d" % (k, v))
     c.to_csv(os.path.join(rc.OUT, "desfase_despliegue.csv"), index=False)
+
+    # ---- sensibilidad informada por el desfase (Revisor 1, segunda ronda)
+    lag = c.groupby("country_text_id").agg(nombre=("country_name", "first"),
+                                            fuente=("anio_fuente", "min"),
+                                            doc=("anio_tratamiento", "first"))
+    lag = lag[lag.fuente < lag.doc]
+    g0 = int(d0.cohort.min())
+    redatar = {k: v for k, v in lag.fuente.items() if v >= g0}
+    fuera = sorted(set(lag.index) - set(redatar))
+    nom = lambda ks: ", ".join("%s %d" % (lag.nombre[k], lag.fuente[k]) for k in ks)
+    esc = [("Lag-informed dates",
+            "Re-dated to the deployment year stated in the source (%s); excluded because the "
+            "stated year precedes the first cohort (%s)" % (nom(redatar), nom(fuera)),
+            dict(fechas=redatar, sin_paises=fuera)),
+           ("Lagged countries excluded",
+            "All countries whose source states an earlier deployment excluded (%s)"
+            % ", ".join(lag.nombre), dict(sin_paises=list(lag.index)))]
+    L("")
+    L("SENSIBILIDAD INFORMADA POR EL DESFASE")
+    filas = []
+    for nombre, detalle, kw in esc:
+        d = rc.cargar(**kw)
+        for var, lab in rc.INDICADORES:
+            cel, ev, (att, se), nviv, exc, _w = rc.paquete(d, var)
+            filas.append(dict(escenario=nombre, detalle=detalle, cov_fin=d.attrs["cov_fin"],
+                              variable=var, etiqueta=lab, ATT=att, SE=se,
+                              IC_inf=att - 1.96 * se, IC_sup=att + 1.96 * se,
+                              p=2 * (1 - stats.norm.cdf(abs(att / se))), cohortes=nviv,
+                              n_tratados=d[d.cohort.notna()].country_text_id.nunique()))
+            L("  %-28s %-27s ATT %+.3f (EE %.3f) p=%.3f tratados %d"
+              % (nombre, lab, att, se, filas[-1]["p"], filas[-1]["n_tratados"]))
+    pd.DataFrame(filas).to_csv(os.path.join(rc.OUT, "desfase_informado.csv"), index=False)
     L.cerrar()
 
 

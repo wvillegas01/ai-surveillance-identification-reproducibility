@@ -289,7 +289,7 @@ def fig5():
     ax.set_xlabel("ATT in ordinal steps of each indicator, with 95% CI")
     neq = int((pe.TOST_p_cuarto_paso < .05).sum())
     n_sr = int(sr.n_tratados.iloc[0])
-    ax.set_title("Precision depends on extrapolation beyond common support", loc="left",
+    ax.set_title("Equivalence to zero inside and outside the common-support region", loc="left",
                  color=INK, pad=26)
     ax.text(0, 1.02, "Shaded: ±¼ ordinal step. Full sample: %d of 8 equivalent to zero (TOST). "
             "Common-support subset: %d of 81 treated countries, bootstrap intervals."

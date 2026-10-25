@@ -1,0 +1,76 @@
+[10:43:11] === 20f — escala, potencia, estimadores, TWFE y validez ===
+[10:43:11] 
+[10:43:11] 1. CONVERSIÓN LATENTE -> ORDINAL (muestra de estimación, 2000-2022)
+[10:43:11]    el DSP publica la estimación latente del modelo de medición y su
+[10:43:11]    versión ordinal (_ord, escala 0-4 del codebook). Paso = distancia media
+[10:43:11]    entre las medias latentes de categorías ordinales contiguas
+[10:43:11]   Internet filtering          paso 1.228 | ancho entre umbrales 1.191 | pendiente 1.251 | sd entre países 1.520 | categorías solapadas 0
+[10:43:11]   Social media surveillance   paso 1.289 | ancho entre umbrales 1.356 | pendiente 1.267 | sd entre países 1.390 | categorías solapadas 0
+[10:43:11]   Social media censorship     paso 1.498 | ancho entre umbrales 1.355 | pendiente 1.500 | sd entre países 1.372 | categorías solapadas 0
+[10:43:11]   Internet shutdowns          paso 1.308 | ancho entre umbrales 1.116 | pendiente 1.504 | sd entre países 1.242 | categorías solapadas 0
+[10:43:11]   Social media shutdowns      paso 1.280 | ancho entre umbrales 1.070 | pendiente 1.374 | sd entre países 1.266 | categorías solapadas 0
+[10:43:11]   Arrests for online content  paso 1.468 | ancho entre umbrales 1.526 | pendiente 1.510 | sd entre países 1.568 | categorías solapadas 0
+[10:43:11]   Government disinformation   paso 1.205 | ancho entre umbrales 1.229 | pendiente 1.168 | sd entre países 1.318 | categorías solapadas 2
+[10:43:11]   Party disinformation        paso 1.226 | ancho entre umbrales 1.381 | pendiente 1.173 | sd entre países 1.157 | categorías solapadas 0
+[10:43:11] 
+[10:43:11] 2. POTENCIA Y EQUIVALENCIA (ATT agregado, EE analítico)
+[10:43:11]   Internet filtering          ATT +0.012 [-0.115, +0.140] | MDE 0.182 = 0.15 pasos | TOST ±¼ paso p=0.000
+[10:43:11]   Social media surveillance   ATT -0.014 [-0.177, +0.149] | MDE 0.233 = 0.18 pasos | TOST ±¼ paso p=0.000
+[10:43:11]   Social media censorship     ATT +0.036 [-0.082, +0.153] | MDE 0.168 = 0.11 pasos | TOST ±¼ paso p=0.000
+[10:43:11]   Internet shutdowns          ATT +0.054 [-0.071, +0.179] | MDE 0.179 = 0.14 pasos | TOST ±¼ paso p=0.000
+[10:43:11]   Social media shutdowns      ATT -0.004 [-0.129, +0.122] | MDE 0.179 = 0.14 pasos | TOST ±¼ paso p=0.000
+[10:43:11]   Arrests for online content  ATT +0.099 [-0.068, +0.266] | MDE 0.238 = 0.16 pasos | TOST ±¼ paso p=0.001
+[10:43:11]   Government disinformation   ATT +0.042 [-0.150, +0.234] | MDE 0.274 = 0.23 pasos | TOST ±¼ paso p=0.004
+[10:43:11]   Party disinformation        ATT +0.105 [-0.043, +0.254] | MDE 0.213 = 0.17 pasos | TOST ±¼ paso p=0.004
+[10:43:11]   MDE mediano 0.197 = 0.16 pasos ordinales
+[10:43:11]   equivalentes a cero dentro de ±cuarto paso: 8 de 8
+[10:43:11]   equivalentes a cero dentro de ±quinto paso: 8 de 8
+[10:43:11]   equivalentes a cero dentro de ±decima sd: 3 de 8
+[10:43:11] 
+[10:43:11] 3. ESTIMADOR × COVARIABLES (filtrado): cohortes con celdas y estimación
+[10:43:12]   reg      sin covariables   cohortes 8 (12,13,14,15,16,17,18,19) | tratados representados 81 | ATT -0.016 (0.049)
+[10:43:12]   reg      dos covariables   cohortes 8 (12,13,14,15,16,17,18,19) | tratados representados 81 | ATT -0.015 (0.046)
+[10:43:13]   reg      cinco covariables cohortes 8 (12,13,14,15,16,17,18,19) | tratados representados 81 | ATT +0.012 (0.065)
+[10:43:14]   dr       dos covariables   cohortes 8 (12,13,14,15,16,17,18,19) | tratados representados 81 | ATT -0.018 (0.046)
+[10:43:16]   dr       cinco covariables cohortes 6 (14,15,16,17,18,19) | tratados representados 72 | ATT -0.046 (0.062)
+[10:43:18]   std_ipw  dos covariables   cohortes 8 (12,13,14,15,16,17,18,19) | tratados representados 81 | ATT -0.018 (0.046)
+[10:43:19]   std_ipw  cinco covariables cohortes 6 (14,15,16,17,18,19) | tratados representados 72 | ATT -0.059 (0.052)
+[10:43:19] 
+[10:43:19] 4. TWFE ESTÁTICO frente a escalonado (mismo panel, 2000-2022)
+[10:43:19]   Internet filtering          TWFE -0.092 (0.062) | CS simple +0.012 (0.065) ×1.0 | CS dinámico -0.001 (0.114) ×1.8
+[10:43:20]   Social media surveillance   TWFE -0.173 (0.072) | CS simple -0.014 (0.083) ×1.2 | CS dinámico -0.002 (0.138) ×1.9
+[10:43:20]   Social media censorship     TWFE -0.076 (0.052) | CS simple +0.036 (0.060) ×1.2 | CS dinámico +0.048 (0.099) ×1.9
+[10:43:20]   Internet shutdowns          TWFE -0.063 (0.059) | CS simple +0.054 (0.064) ×1.1 | CS dinámico +0.059 (0.105) ×1.8
+[10:43:21]   Social media shutdowns      TWFE -0.053 (0.060) | CS simple -0.004 (0.064) ×1.1 | CS dinámico -0.009 (0.104) ×1.7
+[10:43:21]   Arrests for online content  TWFE -0.196 (0.076) | CS simple +0.099 (0.085) ×1.1 | CS dinámico +0.179 (0.144) ×1.9
+[10:43:22]   Government disinformation   TWFE -0.195 (0.081) | CS simple +0.042 (0.098) ×1.2 | CS dinámico +0.032 (0.196) ×2.4
+[10:43:22]   Party disinformation        TWFE -0.179 (0.081) | CS simple +0.105 (0.076) ×0.9 | CS dinámico +0.103 (0.146) ×1.8
+[10:43:22]   TWFE negativos 8/8, con IC que excluye cero 4/8
+[10:43:22]   cociente de EE mediano: simple 1.10 | dinámico 1.87 (versión enviada: 4-6, con EE = media de EE)
+[10:43:22] 
+[10:43:22] 5. COMPROBACIONES DE VALIDEZ (filtrado, especificación principal)
+[10:43:22]   logit prensa sin controles           coef +0.592 (EE 0.569) p=0.298
+[10:43:22]   logit prensa con controles           coef +0.159 (EE 2.106) p=0.940
+[10:43:23]   prensa libre (> mediana de tratados) ATT +0.042 (EE 0.089) p=0.635 | tratados 40, cohortes 8
+[10:43:24]   prensa restringida (<= mediana)      ATT -0.023 (EE 0.069) p=0.733 | tratados 41, cohortes 8
+[10:43:25]   resultado sustantivo                 ATT +0.012 (EE 0.065) p=0.849
+[10:43:26]   dispersión entre codificadores       ATT +0.003 (EE 0.011) p=0.764
+[10:43:27]   número de codificadores              ATT -0.063 (EE 0.137) p=0.645
+[10:43:28]   placebo regional                     ATT +0.020 (EE 0.081) p=0.806 | pseudo-tratados 21, cohorte 2016
+[10:43:28] 
+[10:43:28] 7. EQUIVALENCIA EN LA SUBMUESTRA CON SOPORTE COMUN
+[10:43:28]   equivalencia dentro de cuarto_paso    4 de 8
+[10:43:28]   equivalencia dentro de quinto_paso    3 de 8
+[10:43:28]   equivalencia dentro de decima_sd      0 de 8
+[10:43:28]   IC 95% entero dentro de 1/4 de escalon: 3 de 8
+[10:43:28]   cociente EE restringida/completa: min 1.73 max 3.63 mediana 2.44
+[10:43:28] 
+[10:43:28] 6. DESCRIPTIVOS DE LOS RESULTADOS (muestra de estimación, 2000-2022)
+[10:43:28]   Internet filtering          media +0.48  dt 1.56
+[10:43:28]   Social media surveillance   media +0.29  dt 1.45
+[10:43:28]   Social media censorship     media +0.45  dt 1.41
+[10:43:28]   Internet shutdowns          media +0.61  dt 1.28
+[10:43:28]   Social media shutdowns      media +0.62  dt 1.30
+[10:43:28]   Arrests for online content  media +0.44  dt 1.62
+[10:43:28]   Government disinformation   media +0.27  dt 1.40
+[10:43:28]   Party disinformation        media +0.41  dt 1.27

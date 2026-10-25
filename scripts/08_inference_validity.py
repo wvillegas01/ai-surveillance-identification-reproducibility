@@ -191,6 +191,43 @@ def main():
       % ("placebo regional", att, se, val[-1]["p"], val[-1]["n_tratados"], g_med))
     pd.DataFrame(val).to_csv(os.path.join(rc.OUT, "validez_v2.csv"), index=False)
 
+    # ------------------------------------------------ 7. equivalencia en la
+    #    submuestra con soporte comun (respuesta al punto 1 del editor)
+    L("")
+    L("7. EQUIVALENCIA EN LA SUBMUESTRA CON SOPORTE COMUN")
+    rest = pd.read_csv(os.path.join(rc.OUT, "soporte_restringido.csv"))
+    marg = [("cuarto_paso", "umbral_cuarto_paso"),
+            ("quinto_paso", "umbral_quinto_paso"),
+            ("decima_sd", "umbral_decima_sd")]
+    eq = rest.merge(pot[["variable", "paso"] + [c for _, c in marg] + ["SE"]],
+                    on="variable", suffixes=("", "_completa"))
+    for clave, col in marg:
+        eq["TOSTp_" + clave] = 1.0 - stats.norm.cdf(
+            (eq[col] - eq.ATT.abs()) / eq.SE)
+        eq["equiv_" + clave] = eq["TOSTp_" + clave] < 0.05
+    z90 = stats.norm.ppf(0.95)
+    eq["IC90_inf"] = eq.ATT - z90 * eq.SE
+    eq["IC90_sup"] = eq.ATT + z90 * eq.SE
+    eq["IC95_dentro_cuarto"] = ((eq.IC_inf > -eq.umbral_cuarto_paso) &
+                                (eq.IC_sup < eq.umbral_cuarto_paso))
+    eq["ratio_EE"] = eq.SE / eq.SE_completa
+    orden = ["variable", "etiqueta", "n_tratados", "n_cohortes", "ATT", "SE",
+             "IC90_inf", "IC90_sup", "IC_inf", "IC_sup", "SE_completa",
+             "ratio_EE", "paso"]
+    for clave, col in marg:
+        orden += [col, "TOSTp_" + clave, "equiv_" + clave]
+    orden += ["IC95_dentro_cuarto"]
+    eq = eq[[c for c in orden if c in eq.columns]]
+    eq.to_csv(os.path.join(rc.OUT, "equivalencia_soporte_restringido.csv"),
+              index=False)
+    for clave, _ in marg:
+        L("  equivalencia dentro de %-14s %d de 8"
+          % (clave, int(eq["equiv_" + clave].sum())))
+    L("  IC 95%% entero dentro de 1/4 de escalon: %d de 8"
+      % int(eq.IC95_dentro_cuarto.sum()))
+    L("  cociente EE restringida/completa: min %.2f max %.2f mediana %.2f"
+      % (eq.ratio_EE.min(), eq.ratio_EE.max(), eq.ratio_EE.median()))
+
     # ------------------------------------------------ 6. descriptivos
     L("")
     L("6. DESCRIPTIVOS DE LOS RESULTADOS (muestra de estimación, 2000-2022)")

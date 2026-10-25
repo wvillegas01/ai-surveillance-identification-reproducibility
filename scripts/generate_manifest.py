@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Writes checksums/manifest_sha256.csv with the SHA-256 of every package file
-(excluding .git, outputs/ except the verification report, and caches).
+(excluding .git, outputs/ except the verification report and the execution
+logs, and caches).
 Usage:  python scripts/generate_manifest.py"""
 import os, csv, hashlib
 
@@ -11,7 +12,9 @@ for raiz, dirs, fs in os.walk(ROOT):
     for f in sorted(fs):
         p = os.path.join(raiz, f)
         rel = os.path.relpath(p, ROOT).replace("\\", "/")
-        if rel.startswith("checksums/") or (rel.startswith("outputs/") and "reproducibility_check_report" not in rel):
+        if rel.startswith("checksums/") or (rel.startswith("outputs/")
+                                            and "reproducibility_check_report" not in rel
+                                            and not rel.startswith("outputs/logs/")):
             continue
         if rel.startswith(("data/raw/dsp/", "data/raw/vdem/")) and rel.endswith(".csv"):
             continue

@@ -1,0 +1,57 @@
+[10:41:33] === 20e — solapamiento ===
+[10:41:33] 
+[10:41:33] 1. SOPORTE POR ESPECIFICACIÓN DEL LOGIT (81 tratados, 8 cohortes)
+[10:41:33]   niveles            separación 1/8 | tratados sobre el máx. de la comparación 23/81 | fuera de [0,1;0,9] 25/81 | peso máx 47.7 | ESS mediano 9.7 (13%)
+[10:41:33]   logaritmos         separación 2/8 | tratados sobre el máx. de la comparación 47/81 | fuera de [0,1;0,9] 33/81 | peso máx 49.2 | ESS mediano 14.0 (18%)
+[10:41:33]   log + cuadraticos  separación 2/8 | tratados sobre el máx. de la comparación 49/81 | fuera de [0,1;0,9] 43/81 | peso máx 38.4 | ESS mediano 7.8 (10%)
+[10:41:33]   por cohorte (logaritmos):
+[10:41:33]     2012 n= 5 sobre máx  5 | fuera [0,1;0,9]  5 | peso máx   49.2 | ESS   1.9 | sep True
+[10:41:33]     2013 n= 4 sobre máx  4 | fuera [0,1;0,9]  4 | peso máx   48.6 | ESS   2.1 | sep True
+[10:41:33]     2014 n= 8 sobre máx  2 | fuera [0,1;0,9]  2 | peso máx   11.2 | ESS  14.5 | sep False
+[10:41:33]     2015 n= 7 sobre máx  6 | fuera [0,1;0,9]  3 | peso máx   17.7 | ESS   8.3 | sep False
+[10:41:33]     2016 n=18 sobre máx 13 | fuera [0,1;0,9]  8 | peso máx    9.7 | ESS  15.2 | sep False
+[10:41:33]     2017 n=12 sobre máx  8 | fuera [0,1;0,9]  4 | peso máx    7.5 | ESS  20.5 | sep False
+[10:41:33]     2018 n=15 sobre máx  7 | fuera [0,1;0,9]  5 | peso máx   11.0 | ESS  13.5 | sep False
+[10:41:33]     2019 n=12 sobre máx  2 | fuera [0,1;0,9]  2 | peso máx    7.9 | ESS  21.6 | sep False
+[10:41:33] 
+[10:41:33] 2. BALANCE POR COHORTE antes y después de ponderar (logaritmos)
+[10:41:33]   covariables del modelo: |SMD| medio 0.844 -> 0.362 | >0,25: 37 -> 21 de 40
+[10:41:33]   diagnósticas externas: |SMD| medio 0.466 -> 0.317 | >0,25: 21 -> 12 de 24
+[10:41:33]     v2polyarchy          antes +0.474 -> después +0.024 (media entre cohortes)
+[10:41:33]     v2rule               antes +0.439 -> después -0.008 (media entre cohortes)
+[10:41:33]     v2stfisccap          antes +0.847 -> después +0.053 (media entre cohortes)
+[10:41:33]     e_gdppc              antes +0.897 -> después +0.017 (media entre cohortes)
+[10:41:33]     e_pop                antes +1.343 -> después +0.643 (media entre cohortes)
+[10:41:33]     v2libdem             antes +0.492 -> después -0.072 (media entre cohortes)
+[10:41:33]     v2svstterr           antes +0.452 -> después +0.181 (media entre cohortes)
+[10:41:33]     v2freexp_altinf      antes +0.281 -> después +0.067 (media entre cohortes)
+[10:41:33] 
+[10:41:33] 3. ESTIMACIÓN RESTRINGIDA AL SOPORTE COMÚN OBSERVADO (logaritmos)
+[10:41:33]    por cohorte: tratados con ps <= máx. de la comparación y comparación con
+[10:41:33]    ps >= mín. de los tratados; cambia la población objetivo
+[10:41:33]   tratados retenidos: 34 de 81 en 6 cohortes
+[10:41:33]     2012: 0 de 5 tratados | comparación 0 de 77 | —
+[10:41:33]     2013: 0 de 4 tratados | comparación 0 de 77 | —
+[10:41:33]     2014: 6 de 8 tratados | comparación 16 de 77 | Bolivia, Ecuador, Israel, Kenya, New Zealand, Qatar
+[10:41:33]     2015: 1 de 7 tratados | comparación 20 de 77 | Bahrain
+[10:41:33]     2016: 5 de 18 tratados | comparación 42 de 77 | Jamaica, Lebanon, Namibia, Romania, Uruguay
+[10:41:33]     2017: 4 de 12 tratados | comparación 36 de 77 | Georgia, Mongolia, Panama, Tajikistan
+[10:41:33]     2018: 8 de 15 tratados | comparación 20 de 77 | Angola, Hungary, Kyrgyzstan, Cambodia, Peru, North Korea, Paraguay, Uganda
+[10:41:33]     2019: 10 de 12 tratados | comparación 37 de 77 | Belarus, Botswana, Switzerland, Iraq, Sri Lanka, Burma/Myanmar, Papua New Guinea, Serbia, Zambia, Zimbabwe
+[10:41:33]   perfil (medias 2000-2011): todos los tratados vs retenidos
+[10:41:33]     v2polyarchy             0.559 vs    0.502
+[10:41:33]     v2rule                  0.583 vs    0.503
+[10:41:33]     v2stfisccap             1.319 vs    0.858
+[10:41:33]     e_gdppc                 3.275 vs    2.779
+[10:41:33]     e_pop                   7.729 vs    6.726
+[10:41:33]     v2libdem                0.451 vs    0.383
+[10:41:33]     v2svstterr             93.744 vs   91.856
+[10:41:33]     v2freexp_altinf         0.692 vs    0.650
+[10:41:39]   Internet filtering          ATT +0.025 (EE boot 0.236) p=0.916 | 6 cohortes
+[10:41:52]   Social media surveillance   ATT -0.048 (EE boot 0.206) p=0.815 | 6 cohortes
+[10:42:05]   Social media censorship     ATT +0.005 (EE boot 0.145) p=0.974 | 6 cohortes
+[10:42:18]   Internet shutdowns          ATT +0.002 (EE boot 0.129) p=0.988 | 6 cohortes
+[10:42:31]   Social media shutdowns      ATT +0.037 (EE boot 0.151) p=0.805 | 6 cohortes
+[10:42:44]   Arrests for online content  ATT +0.009 (EE boot 0.221) p=0.967 | 6 cohortes
+[10:42:57]   Government disinformation   ATT -0.060 (EE boot 0.241) p=0.805 | 6 cohortes
+[10:43:09]   Party disinformation        ATT -0.024 (EE boot 0.131) p=0.856 | 6 cohortes

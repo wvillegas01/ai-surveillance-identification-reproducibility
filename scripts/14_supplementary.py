@@ -150,6 +150,13 @@ def st3():
     ev = ev.merge(cod2, on=["country_text_id", "key"], how="left")
     ev["ident"] = ev.url
     ev.loc[ev.url.isna() & (ev.key == "UBF2EAGF"), "ident"] = "https://doi.org/10.1109/ICISCE.2017.103"
+    comp = O("soporte_restringido_composicion.csv")
+    sop = set(sum((str(s).split("|") for s in comp.tratados_retenidos.dropna()), []))
+    # evidencia operativa por pais: un sistema en funcionamiento, documentado por una
+    # fuente contemporanea (Implemented) o por una posterior que lo fecha (Retrospective)
+    eop = O("estado_operativo_por_pais.csv")
+    ope = set(eop.country_text_id[eop.estado_operativo.isin(
+        ["Implemented", "Retrospective"])])
     d = pd.DataFrame({
         "Country": ev.country_name, "ISO3": ev.country_text_id,
         "First documented year (primary rule)": ev.anio_tratamiento.astype(int),
@@ -167,6 +174,10 @@ def st3():
         "Countries covered by the record": ev.n_paises_item,
         "Operational status (implemented / contract / announcement / project / retrospective)":
             ev.estado_operativo.fillna(""),
+        "Retained within the common support": ev.country_text_id.isin(sop).map(
+            {True: "Yes", False: "No"}),
+        "Documents an operating system": ev.country_text_id.isin(ope).map(
+            {True: "Yes", False: "No"}),
         "Supporting evidence from the source": ev.evidencia_textual.fillna(""),
         "Year or period mentioned in the source": ev.anio_mencionado.fillna(""),
         "What the year refers to": ev.referencia_anio.fillna(""),
@@ -195,7 +206,7 @@ def st3():
            "test, planned operation, purchase, agreement, implementation work); only "
            "operation, installation and pilot years indicate deployment. Publication dates "
            "are normalised to ISO 8601 with their recorded precision; the publication year "
-           "used for dating equals the year of the recorded date in every row.")
+           "used for dating equals the year of the recorded date in every row. The last two columns record the membership of the two subsets of 34 countries that the manuscript distinguishes. Retained within the common support marks the 34 countries kept inside the region of observed overlap of the comparison group, a statistical criterion applied to the pre-treatment covariates. Documents an operating system marks the 34 countries whose dating record attests a system in operation, that is, whose country-level operational status is Implemented or Retrospective; this is a documentary criterion and is applied per country, so it is not read off a single row. The two subsets are of equal size by coincidence and share 15 members, so 19 countries belong to each alone.")
     return d, cap
 
 
@@ -239,9 +250,11 @@ def st5():
                       "Cohorts with estimates": mv.cohortes_vivas,
                       "Treated countries": mv.n_tratados,
                       "Comparison countries": mv.n_comparacion})
-    cap = ("Supplementary Table 5. Specification analysis for internet filtering: 75 "
-           "configurations (5 dating rules x 3 covariate sets x 2 transformations x 3 comparison "
-           "samples, with the transformation not applicable without covariates). All "
+    cap = ("Supplementary Table 5. Specification analysis for internet filtering: 60 "
+           "distinct configurations (5 dating rules x 3 comparison samples x 4 covariate "
+           "variants: no covariates, the reduced set, and the five-covariate set in logarithms "
+           "and in levels; the transformation affects only income and population, so it is not "
+           "applicable to the first two). All "
            "configurations use outcome regression and end in 2022. Estimate: cohort-size-"
            "weighted post-treatment summary with analytical SE.")
     return d, cap
@@ -263,6 +276,9 @@ def st6():
         filas.append(["Treatment-date shift", "%d year%s earlier" % (x.desplazamiento,
                       "s" if x.desplazamiento > 1 else ""), OUTC[x.variable], x.ATT, x.SE,
                       x.IC_inf, x.IC_sup, x.p, x.n_tratados, x.cohortes_vivas])
+    for _i, x in O("desfase_informado.csv").iterrows():
+        filas.append(["Lag-informed dating", x.detalle, OUTC[x.variable], x.ATT, x.SE,
+                      x.IC_inf, x.IC_sup, x.p, x.n_tratados, x.cohortes])
     for _i, x in O("por_tecnologia.csv").iterrows():
         filas.append(["Technology-specific dating", TECH[x.familia], OUTC[x.variable], x.ATT,
                       x.SE, x.IC_inf, x.IC_sup, x.p, x.n_tratados, x.cohortes_vivas])
@@ -279,8 +295,10 @@ def st6():
                                      "95% CI lower", "95% CI upper", "p-value",
                                      "Treated countries", "Cohorts"])
     cap = ("Supplementary Table 6. Sensitivity analyses for the eight outcomes: alternative "
-           "specifications, treatment dates shifted one to three years earlier (covariate window "
-           "shifted accordingly), treated countries restricted to those whose dating record "
+           "specifications, treatment dates shifted one to six years earlier (covariate window "
+           "shortened accordingly, so that shifts of four to six years also shorten the minimum "
+           "pre-treatment period), lag-informed dating using the deployment years stated in the "
+           "sources (Supplementary Table 3), treated countries restricted to those whose dating record "
            "documents an operating system (Supplementary Table 3), technology-specific dating (each family dated by its own first "
            "qualifying record; other documented adopters excluded), and the subset within the "
            "observed propensity-score overlap. Estimates are cohort-size-weighted post-treatment "
@@ -335,6 +353,38 @@ def st8():
     return d, cap
 
 
+def st9():
+    e = O("equivalencia_soporte_restringido.csv")
+    si = {True: "Yes", False: "No"}
+    d = pd.DataFrame({"Outcome": e.etiqueta,
+                      "Treated countries": e.n_tratados,
+                      "Cohorts": e.n_cohortes,
+                      "Estimate": e.ATT, "Bootstrap SE": e.SE,
+                      "90% CI lower": e.IC90_inf, "90% CI upper": e.IC90_sup,
+                      "95% CI lower": e.IC_inf, "95% CI upper": e.IC_sup,
+                      "Full-sample SE": e.SE_completa, "SE ratio": e.ratio_EE,
+                      "Ordinal step": e.paso,
+                      "Margin 1/4 step": e.umbral_cuarto_paso,
+                      "TOST p (1/4 step)": e.TOSTp_cuarto_paso,
+                      "Equivalent (1/4 step)": e.equiv_cuarto_paso.map(si),
+                      "Margin 1/5 step": e.umbral_quinto_paso,
+                      "TOST p (1/5 step)": e.TOSTp_quinto_paso,
+                      "Equivalent (1/5 step)": e.equiv_quinto_paso.map(si),
+                      "Margin 1/10 SD": e.umbral_decima_sd,
+                      "TOST p (1/10 SD)": e.TOSTp_decima_sd,
+                      "Equivalent (1/10 SD)": e.equiv_decima_sd.map(si),
+                      "95% CI within 1/4 step": e.IC95_dentro_cuarto.map(si)})
+    cap = ("Supplementary Table 9. Equivalence tests in the subsample restricted to the observed "
+           "common support (34 treated countries in six cohorts). Two one-sided tests at the 5% "
+           "level against three margins, using the bootstrap standard error of the restricted "
+           "subsample: equivalence is established when the TOST p-value is below 0.05, which is "
+           "equivalent to the 90% confidence interval lying within the margin. Margins are in "
+           "latent units and are outcome-specific. The last column reports whether the 95% "
+           "interval shown in Figure 5 also lies within the quarter-step band, a stricter and "
+           "purely visual criterion.")
+    return d, cap
+
+
 def escribir(wb, nombre, d, cap):
     ws = wb.create_sheet(nombre)
     f = Font(name="Arial", size=10); fb = Font(name="Arial", size=10, bold=True)
@@ -379,7 +429,7 @@ def escribir(wb, nombre, d, cap):
 
 def main():
     os.makedirs(DEST, exist_ok=True)
-    tablas = [st1(), st2(), st3(), st4(), st5(), st6(), st7(), st8()]
+    tablas = [st1(), st2(), st3(), st4(), st5(), st6(), st7(), st8(), st9()]
     wb = Workbook(); ws = wb.active; ws.title = "Contents"
     fb = Font(name="Arial", size=12, bold=True); f = Font(name="Arial", size=10)
     ws["A1"] = "Supplementary Material"; ws["A1"].font = Font(name="Arial", size=14, bold=True)
@@ -403,6 +453,12 @@ def main():
     ws.column_dimensions["A"].width = 24; ws.column_dimensions["B"].width = 8
     ws.column_dimensions["C"].width = 110
     salida = os.path.join(DEST, "Supplementary_Material.xlsx")
+    # openpyxl deja "openpyxl" como creador del libro; se declara el autor
+    wb.properties.creator = "William Villegas-Ch"
+    wb.properties.lastModifiedBy = "William Villegas-Ch"
+    wb.properties.title = "Supplementary Material"
+    wb.properties.subject = ("Identification Limits in Estimating the Effects of "
+                             "Algorithmic Surveillance on Digital Freedoms")
     wb.save(salida)
     print("-> %s" % salida)
 

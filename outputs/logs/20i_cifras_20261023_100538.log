@@ -1,0 +1,24 @@
+[10:05:34] === 20i — cifras del manuscrito ===
+[10:05:34] BALANCE AGRUPADO (2000-2011)
+[10:05:34]   v2polyarchy            tratados     0.559 | comparación     0.470 | SMD +0.339
+[10:05:34]   v2rule                 tratados     0.583 | comparación     0.490 | SMD +0.299
+[10:05:34]   v2stfisccap            tratados     1.319 | comparación     0.517 | SMD +0.675
+[10:05:34]   e_gdppc                tratados     3.275 | comparación     2.441 | SMD +0.744
+[10:05:34]   e_pop                  tratados     7.729 | comparación     5.870 | SMD +1.287
+[10:05:34]   v2libdem               tratados     0.451 | comparación     0.353 | SMD +0.366
+[10:05:34]   v2svstterr             tratados    93.744 | comparación    89.990 | SMD +0.403
+[10:05:34]   v2freexp_altinf        tratados     0.692 | comparación     0.645 | SMD +0.166
+[10:05:34]   e_gdppc_niveles        tratados    41.436 | comparación    24.069 | SMD +0.493
+[10:05:34]   e_pop_niveles          tratados  7410.584 | comparación   861.391 | SMD +0.450
+[10:05:34] CORRELACIONES: 0.60 a 0.93, media 0.78; PC1 81%
+[10:05:34] DATACIÓN: |p25 - principal| medio 1.20 años; rho(pos, neg) 0.86; fecha distinta de year_min en 14 países (máx +6, media +2.9); rho(año, nº registros) -0.56 (p=0.000)
+[10:05:34] PREVIOS (filtrado): media +0.004, máx |0.073|; en los 8 resultados: previos sig 4/144 (simult 0), posteriores sig 2/88 (simult 0); países en e=6: 42, e=8: 17
+[10:05:34] APÉNDICE: ATT por cohorte (media de las celdas posteriores, t <= 2022)
+[10:05:38]   2012 n= 5 simple -0.180 | OR -0.143 | IPW   —   | DR   —   | sep True | ps=1 4 | fuera 5
+[10:05:38]   2013 n= 4 simple +0.084 | OR +0.129 | IPW   —   | DR   —   | sep True | ps=1 1 | fuera 4
+[10:05:38]   2014 n= 8 simple -0.122 | OR -0.030 | IPW -0.117 | DR -0.069 | sep False | ps=1 0 | fuera 2
+[10:05:38]   2015 n= 7 simple +0.080 | OR +0.170 | IPW +0.082 | DR +0.129 | sep False | ps=1 0 | fuera 6
+[10:05:38]   2016 n=18 simple +0.041 | OR +0.065 | IPW +0.007 | DR +0.014 | sep False | ps=1 0 | fuera 13
+[10:05:38]   2017 n=12 simple -0.053 | OR -0.021 | IPW -0.059 | DR -0.063 | sep False | ps=1 0 | fuera 8
+[10:05:38]   2018 n=15 simple +0.075 | OR +0.040 | IPW -0.112 | DR -0.126 | sep False | ps=1 0 | fuera 7
+[10:05:38]   2019 n=12 simple -0.095 | OR -0.158 | IPW -0.226 | DR -0.226 | sep False | ps=1 0 | fuera 2

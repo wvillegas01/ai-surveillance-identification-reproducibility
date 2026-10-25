@@ -1,0 +1,53 @@
+{
+  "cohorte": 2012,
+  "variable": "v2smgovfilprc",
+  "logit": {
+    "converged": true,
+    "params_finitos": true,
+    "max_abs_param": 1530.5374094471101,
+    "avisos": [
+      "overflow encountered in exp",
+      "Perfect separation or prediction detected, parameter may not be identified",
+      "overflow encountered in exp",
+      "Perfect separation or prediction detected, parameter may not be identified",
+      "overflow encountered in exp",
+      "Perfect separation or prediction detected, parameter may not be identified"
+    ]
+  },
+  "scores": {
+    "tratados_p_igual_1": 4,
+    "comparacion_p_igual_0": 3,
+    "odds_tratados_no_finitos": 4,
+    "odds_comparacion_no_finitos": 0,
+    "max_odds_comparacion": 7.730335480913502e-10
+  },
+  "pesos": {
+    "suma_odds": 1.210731893118882e-09,
+    "max_suma1": 0.6384845005610552,
+    "max_media1_comparacion": 49.16330654320125,
+    "max_media1_muestra": 52.35572904600652,
+    "finitos": true,
+    "ess_kish": 1.9261870768846936
+  },
+  "dr_manual": {
+    "att": 0.03211788482055595,
+    "primer_no_finito": null,
+    "periodo": 2015
+  },
+  "versiones": {
+    "differences": "0.3.0",
+    "csdid": "sin atributo __version__"
+  },
+  "celdas": {
+    "n": 22,
+    "v012_na": 22,
+    "v030_na": 22,
+    "csdid_na": 22
+  },
+  "dependencias_comunes": [
+    "numpy 2.5.4",
+    "pandas 3.0.6",
+    "scipy 1.18.1",
+    "statsmodels 0.15.0"
+  ]
+}

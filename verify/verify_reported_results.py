@@ -79,10 +79,20 @@ def checks(R):
     add("Doubly robust, five covariates: ATT", g.loc[("dr", "cinco covariables"), "ATT"], -0.046)
 
     mv = r("multiverso_v2.csv").dropna(subset=["ATT"])
-    add("Specification analysis: configurations", len(mv), 75)
-    add("Specification analysis: negative estimates", int((mv.ATT < 0).sum()), 65)
-    add("Specification analysis: median", mv.ATT.median(), -0.020)
+    add("Specification analysis: configurations", len(mv), 60)
+    add("Specification analysis: negative estimates", int((mv.ATT < 0).sum()), 51)
+    add("Specification analysis: median", mv.ATT.median(), -0.022)
     add("Specification analysis: intervals excluding zero", int(((mv.IC_inf > 0) | (mv.IC_sup < 0)).sum()), 0)
+
+    eqr = r("equivalencia_soporte_restringido.csv")
+    add("Support-restricted equivalence, quarter step", int(eqr.equiv_cuarto_paso.sum()), 5)
+    add("Support-restricted equivalence, fifth step", int(eqr.equiv_quinto_paso.sum()), 3)
+    add("Support-restricted equivalence, tenth SD", int(eqr.equiv_decima_sd.sum()), 0)
+    add("Support-restricted SE ratio, median", eqr.ratio_EE.median(), 2.48, 0.005)
+
+    sr = r("soporte_restringido.csv")
+    add("Support-restricted bootstrap: usable replications", int(sr.replicas_usables.min()), 2000)
+    add("Support-restricted bootstrap: replications losing a cohort", int(sr.replicas_incompletas.max() <= 5), 1)
 
     dc = r("descomposicion.csv")
     add("Earlier specification (cohort-weighted)", dc.ATT.iloc[0], -0.142)
@@ -98,6 +108,19 @@ def checks(R):
     so = r("sensibilidad_operativa.csv"); so = so[so.muestra.str.startswith("Operational")]
     add("Operational-evidence subset: filtering ATT", so[so.variable == "v2smgovfilprc"].ATT.iloc[0], -0.026)
     add("Operational-evidence subset: outcomes with p < 0.05", int((so.p < 0.05).sum()), 0)
+
+    de = r("desplazamiento_fechas.csv")
+    add("Treatment-date shifts estimated (years earlier)", sorted(int(k) for k in de.desplazamiento.unique() if k > 0),
+        [1, 2, 3, 4, 5, 6])
+    add("Date shifts of one to six years: outcomes with p < 0.05", int((de[de.desplazamiento > 0].p < 0.05).sum()), 0)
+    di = r("desfase_informado.csv")
+    li = di[di.escenario == "Lag-informed dates"]
+    add("Lag-informed dates: treated countries", int(li.n_tratados.iloc[0]), 79)
+    add("Lag-informed dates: filtering ATT", li[li.variable == "v2smgovfilprc"].ATT.iloc[0], 0.014)
+    lx = di[di.escenario == "Lagged countries excluded"]
+    add("Countries with stated earlier deployment excluded: treated countries", int(lx.n_tratados.iloc[0]), 75)
+    add("Countries with stated earlier deployment excluded: filtering ATT", lx[lx.variable == "v2smgovfilprc"].ATT.iloc[0], 0.020)
+    add("Lag-informed analyses: outcomes with p < 0.05", int((di.p < 0.05).sum()), 0)
 
     sw = r("software/resumen_implementaciones.csv")
     add("Max |differences 0.1.2 - 0.3.0| across cells", float(sw.max_dif_v012_v030.max()), 0.0, 1e-9)

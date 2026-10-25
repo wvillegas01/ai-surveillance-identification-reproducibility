@@ -118,13 +118,16 @@ def covariables(p, fin, ini=PANEL_START, log_trans=True, vars_=None):
 
 
 def cargar(regla=REGLA_PRINCIPAL, hasta=YEAR_MAIN, excl_marcados=False,
-           log_trans=True, desplazar=0, cov_fin=None, sin_paises=None):
+           log_trans=True, desplazar=0, cov_fin=None, sin_paises=None, fechas=None):
     """Panel de estimacion. `desplazar`=k adelanta k anos la fecha de
-    tratamiento (g-k). La ventana de covariables termina el ano anterior a la
+    tratamiento (g-k). `fechas` ({pais: ano}) sustituye la fecha de los paises
+    indicados. La ventana de covariables termina el ano anterior a la
     primera cohorte efectiva salvo que se indique `cov_fin`."""
     m = maestra()
     p = panel_bruto()
     tr = m[(m.elegible) & (m.aigs_adopter == 1) & m[regla].notna()]
+    if fechas:
+        tr = tr.assign(**{regla: tr.country_text_id.map(fechas).fillna(tr[regla])})
     ct = m[(m.elegible) & (m.aigs_adopter == 0)]
     if excl_marcados:
         ct = ct[~ct.control_marcado]

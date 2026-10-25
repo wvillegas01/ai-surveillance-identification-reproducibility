@@ -1,0 +1,39 @@
+[10:39:31] === 20c — especificaciones, datación y tecnología ===
+[10:39:31] 
+[10:39:31] 1. DESCOMPOSICIÓN versión enviada -> versión corregida (filtrado)
+[10:39:33]   enviada: year_min, cov 2000-2015, niveles        ATT -0.142 (EE 0.183)  tratados 87
+[10:39:33]   + ventana 2000-2011                              ATT -0.141 (EE 0.186)  tratados 87
+[10:39:34]   + logaritmos                                     ATT -0.011 (EE 0.064)  tratados 87
+[10:39:35]   + etiqueta positiva = corregida                  ATT +0.012 (EE 0.065)  tratados 81
+[10:39:37]   solo etiqueta positiva (cov 2000-2015, niveles)  ATT -0.141 (EE 0.201)  tratados 81
+[10:39:37] 
+[10:39:37] 2. DESPLAZAMIENTO DE LA FECHA (g-k), ocho resultados
+[10:39:37]    la ventana de covariables se adelanta con la primera cohorte (2000..g0-k-1)
+[10:39:45]   k=0 (cov 2000-2011): Intern +0.012  Social -0.014  Social +0.036  Intern +0.054  Social -0.004  Arrest +0.099  Govern +0.042  Party +0.105
+[10:39:54]   k=1 (cov 2000-2010): Intern -0.012  Social -0.003  Social +0.026  Intern +0.039  Social +0.004  Arrest +0.087  Govern +0.014  Party +0.090
+[10:40:03]   k=2 (cov 2000-2009): Intern +0.010  Social +0.007  Social +0.029  Intern +0.051  Social +0.003  Arrest +0.050  Govern +0.006  Party +0.086
+[10:40:12]   k=3 (cov 2000-2008): Intern +0.013  Social -0.050  Social +0.024  Intern +0.043  Social +0.010  Arrest +0.003  Govern +0.011  Party +0.086
+[10:40:22]   k=4 (cov 2000-2007): Intern -0.012  Social -0.114  Social -0.021  Intern +0.001  Social -0.010  Arrest -0.014  Govern -0.051  Party +0.062
+[10:40:30]   k=5 (cov 2000-2006): Intern -0.062  Social -0.109  Social -0.028  Intern +0.004  Social -0.005  Arrest -0.059  Govern -0.077  Party +0.056
+[10:40:39]   k=6 (cov 2000-2005): Intern -0.037  Social -0.101  Social -0.037  Intern -0.012  Social -0.002  Arrest -0.047  Govern -0.051  Party +0.052
+[10:40:39] 
+[10:40:39] 3. MULTIVERSO (filtrado), fin de panel 2022 en todas las configuraciones
+[10:41:06]   configuraciones: 60 (estimadas 60)
+[10:41:06]   ATT: mín -0.450 | máx +0.054 | mediana -0.022
+[10:41:06]   negativas: 51 de 60 | IC excluye cero: 0 | pierden cohortes: 0
+[10:41:06]     year_2nd       mediana -0.023  rango [-0.450, +0.024]  negativas 11/12
+[10:41:06]     year_min       mediana -0.046  rango [-0.218, +0.030]  negativas 11/12
+[10:41:06]     year_p25       mediana -0.009  rango [-0.367, +0.048]  negativas 10/12
+[10:41:06]     year_surv_neg  mediana -0.023  rango [-0.329, +0.044]  negativas 10/12
+[10:41:06]     year_surv_pos  mediana -0.013  rango [-0.223, +0.054]  negativas 9/12
+[10:41:06]     transf. -       EE mediano 0.049
+[10:41:06]     transf. log     EE mediano 0.065
+[10:41:06]     transf. niveles EE mediano 0.220
+[10:41:06] 
+[10:41:06] 4. POR FAMILIA TECNOLÓGICA (fecha = primer registro con etiqueta de esa familia)
+[10:41:06]    tratados: adoptantes con esa tecnología en el índice; comparación: nunca
+[10:41:06]    tratados documentados; se excluyen los demás adoptantes
+[10:41:09]   safe_city       tratados 30, cohortes 7, cov 2000-2011 | filtrado +0.002 (EE 0.079) | vigilancia RRSS -0.024 (EE 0.099)
+[10:41:11]   facial          tratados 69, cohortes 7, cov 2000-2012 | filtrado -0.030 (EE 0.070) | vigilancia RRSS -0.040 (EE 0.085)
+[10:41:15]   smart_policing  tratados 51, cohortes 10, cov 2000-2011 | filtrado -0.019 (EE 0.073) | vigilancia RRSS -0.001 (EE 0.093)
+[10:41:18]   sm_monitoring   tratados 21, cohortes 6, cov 2000-2012 | filtrado -0.079 (EE 0.080) | vigilancia RRSS +0.039 (EE 0.105)

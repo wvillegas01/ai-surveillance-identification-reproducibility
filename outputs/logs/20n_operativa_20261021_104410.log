@@ -1,0 +1,44 @@
+[10:43:31] === 20n — sensibilidad a la evidencia operativa ===
+[10:43:32]   Primary (81 treated)                     Internet filtering          ATT +0.012 (EE 0.065) p=0.849 cohortes 8
+[10:43:33]   Primary (81 treated)                     Social media surveillance   ATT -0.014 (EE 0.083) p=0.869 cohortes 8
+[10:43:34]   Primary (81 treated)                     Social media censorship     ATT +0.036 (EE 0.060) p=0.550 cohortes 8
+[10:43:35]   Primary (81 treated)                     Internet shutdowns          ATT +0.054 (EE 0.064) p=0.399 cohortes 8
+[10:43:36]   Primary (81 treated)                     Social media shutdowns      ATT -0.004 (EE 0.064) p=0.956 cohortes 8
+[10:43:37]   Primary (81 treated)                     Arrests for online content  ATT +0.099 (EE 0.085) p=0.245 cohortes 8
+[10:43:38]   Primary (81 treated)                     Government disinformation   ATT +0.042 (EE 0.098) p=0.669 cohortes 8
+[10:43:39]   Primary (81 treated)                     Party disinformation        ATT +0.105 (EE 0.076) p=0.165 cohortes 8
+[10:43:40]   Operational evidence only (34 treated)   Internet filtering          ATT -0.026 (EE 0.093) p=0.776 cohortes 8
+[10:43:42]   Operational evidence only (34 treated)   Social media surveillance   ATT +0.011 (EE 0.100) p=0.916 cohortes 8
+[10:43:43]   Operational evidence only (34 treated)   Social media censorship     ATT +0.084 (EE 0.070) p=0.234 cohortes 8
+[10:43:44]   Operational evidence only (34 treated)   Internet shutdowns          ATT +0.122 (EE 0.068) p=0.075 cohortes 8
+[10:43:46]   Operational evidence only (34 treated)   Social media shutdowns      ATT +0.038 (EE 0.071) p=0.590 cohortes 8
+[10:43:47]   Operational evidence only (34 treated)   Arrests for online content  ATT +0.196 (EE 0.109) p=0.071 cohortes 8
+[10:43:48]   Operational evidence only (34 treated)   Government disinformation   ATT +0.081 (EE 0.137) p=0.556 cohortes 8
+[10:43:49]   Operational evidence only (34 treated)   Party disinformation        ATT +0.013 (EE 0.106) p=0.903 cohortes 8
+[10:43:49] 
+[10:43:49] DESFASE (año de despliegue según la fuente - primer año documentado), 22 países:
+[10:43:49]   antes del año documentado: 6 | mismo año: 16 | después: 0
+[10:43:49]     Lebanon        -1
+[10:43:49]     Mexico         -15
+[10:43:49]     New Zealand    -2
+[10:43:49]     Peru           -2
+[10:43:49]     Russia         -1
+[10:43:49]     Taiwan         -5
+[10:43:49] 
+[10:43:49] SENSIBILIDAD INFORMADA POR EL DESFASE
+[10:43:50]   Lag-informed dates           Internet filtering          ATT +0.014 (EE 0.065) p=0.830 tratados 79
+[10:43:51]   Lag-informed dates           Social media surveillance   ATT -0.013 (EE 0.083) p=0.870 tratados 79
+[10:43:52]   Lag-informed dates           Social media censorship     ATT +0.035 (EE 0.059) p=0.554 tratados 79
+[10:43:53]   Lag-informed dates           Internet shutdowns          ATT +0.043 (EE 0.063) p=0.497 tratados 79
+[10:43:55]   Lag-informed dates           Social media shutdowns      ATT -0.012 (EE 0.063) p=0.854 tratados 79
+[10:43:56]   Lag-informed dates           Arrests for online content  ATT +0.093 (EE 0.085) p=0.274 tratados 79
+[10:43:58]   Lag-informed dates           Government disinformation   ATT +0.040 (EE 0.097) p=0.680 tratados 79
+[10:43:59]   Lag-informed dates           Party disinformation        ATT +0.096 (EE 0.076) p=0.211 tratados 79
+[10:44:00]   Lagged countries excluded    Internet filtering          ATT +0.020 (EE 0.066) p=0.761 tratados 75
+[10:44:02]   Lagged countries excluded    Social media surveillance   ATT -0.008 (EE 0.084) p=0.920 tratados 75
+[10:44:03]   Lagged countries excluded    Social media censorship     ATT +0.036 (EE 0.061) p=0.557 tratados 75
+[10:44:04]   Lagged countries excluded    Internet shutdowns          ATT +0.048 (EE 0.065) p=0.457 tratados 75
+[10:44:05]   Lagged countries excluded    Social media shutdowns      ATT -0.005 (EE 0.064) p=0.935 tratados 75
+[10:44:07]   Lagged countries excluded    Arrests for online content  ATT +0.088 (EE 0.086) p=0.307 tratados 75
+[10:44:08]   Lagged countries excluded    Government disinformation   ATT +0.046 (EE 0.099) p=0.643 tratados 75
+[10:44:10]   Lagged countries excluded    Party disinformation        ATT +0.115 (EE 0.077) p=0.132 tratados 75

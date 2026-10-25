@@ -1,0 +1,58 @@
+[09:57:11] === 20a — tabla maestra v2 ===
+[09:57:11]   -> tabla_maestra_v2.csv (179 países)
+[09:57:11] 
+[09:57:11] FLUJO MUESTRAL (regla principal: year_surv_pos, panel 2000-2022)
+[09:57:11]   Países en el panel integrado DSP x V-Dem x AIGS             179  
+[09:57:11]   Excluidos por historial corto (<12 años previos)              2  Palestine/Gaza, South Sudan
+[09:57:11]   Excluidos por covariables incompletas                         4  Hong Kong, Palestine/West Bank, Somaliland, Zanzibar
+[09:57:11]   Muestra elegible                                            173  
+[09:57:11]     adoptantes documentados (AIGS)                             96  
+[09:57:11]       con fecha (etiqueta positiva)                            81  
+[09:57:11]       sin fecha                                                15  Armenia, Bosnia and Herzegovina, Cameroon, Chile, Croatia, Ghana, Ivory Coast, Laos, Madagascar, Malta, Mauritius, Moldova, Nigeria, Slovenia, Tunisia
+[09:57:11]     sin capacidad documentada                                  77  
+[09:57:11]       con fuentes de vigilancia fechadas (marcados)            18  
+[09:57:11]       sin fuentes (limpios)                                    59  
+[09:57:11]   Muestra de estimación principal                             158  
+[09:57:11] 
+[09:57:11] COHORTES: {2012: 5, 2013: 4, 2014: 8, 2015: 7, 2016: 18, 2017: 12, 2018: 15, 2019: 12}  (suma 81)
+[09:57:11] 
+[09:57:11] PAÍSES DATABLES POR REGLA (adoptantes elegibles = 96)
+[09:57:11]   year_surv_pos   81
+[09:57:11]   year_surv_neg   83
+[09:57:11]   year_min        87
+[09:57:11]   year_2nd        73
+[09:57:11]   year_p25        87
+[09:57:11]   datables con year_min pero sin etiqueta positiva: 6 -> Bosnia and Herzegovina, Chile, Ghana, Laos, Madagascar, Nigeria
+[09:57:11]     (sus únicos registros fechados no llevan etiqueta de ninguna de las
+[09:57:11]      cuatro tecnologías del índice: smart city sin vigilancia u otras)
+[09:57:11]   con fecha distinta entre year_min y la regla principal: 14 (media +2.86 años)
+[09:57:11] 
+[09:57:11] ADOPTANTES SIN FECHA frente a datados (medias 2000-2011)
+[09:57:11]   x_v2x_polyarchy          datados    0.559 | sin datar    0.542 | SMD -0.06
+[09:57:11]   x_v2x_rule               datados    0.583 | sin datar    0.511 | SMD -0.24
+[09:57:11]   x_v2stfisccap            datados    1.319 | sin datar    1.322 | SMD +0.00
+[09:57:11]   x_e_gdppc                datados    3.275 | sin datar    2.688 | SMD -0.59
+[09:57:11]   x_e_pop                  datados    7.729 | sin datar    6.593 | SMD -0.79
+[09:57:11]   x_v2x_libdem             datados    0.451 | sin datar    0.417 | SMD -0.13
+[09:57:11]   x_v2svstterr             datados   93.744 | sin datar   91.738 | SMD -0.25
+[09:57:11]   x_v2x_freexp_altinf      datados    0.692 | sin datar    0.712 | SMD +0.07
+[09:57:11]   aigs_dose                datados    2.679 | sin datar    1.533 | SMD -1.26
+[09:57:11]   vendor_china             datados    0.654 | sin datar    0.867 | SMD +0.51
+[09:57:11]   vendor_us                datados    0.383 | sin datar    0.000 | SMD -1.11
+[09:57:11]   tech_safecity            datados    0.630 | sin datar    0.800 | SMD +0.38
+[09:57:11]   tech_facial              datados    0.889 | sin datar    0.200 | SMD -1.87
+[09:57:11]   tech_smartpolicing       datados    0.728 | sin datar    0.467 | SMD -0.54
+[09:57:11]   tech_socialmedia         datados    0.432 | sin datar    0.067 | SMD -0.92
+[09:57:11]   n_fechadas               datados    6.444 | sin datar    2.667 | SMD +nan
+[09:57:11]   cambio en la media del grupo tratado al excluir a los sin datar:
+[09:57:11]     x_v2x_polyarchy      todos 0.556 -> datados 0.559
+[09:57:11]     x_v2stfisccap        todos 1.319 -> datados 1.319
+[09:57:11]     x_e_gdppc            todos 3.184 -> datados 3.275
+[09:57:11]     x_e_pop              todos 7.552 -> datados 7.729
+[09:57:11] 
+[09:57:11] VENTANAS DE COVARIABLES
+[09:57:11]   principal: ventana común 2000-2011 para todos los países y cohortes
+[09:57:11]   (anterior a la primera cohorte: ningún año tratado entra en el ajuste)
+[09:57:11]   sensibilidad: 2000..g-1 para la cohorte g, igual en tratados y comparación
+[09:57:11]   ventana antigua (errónea): 2000-2015 para todos -> años tratados en las
+[09:57:11]   cohortes [2012, 2013, 2014, 2015]

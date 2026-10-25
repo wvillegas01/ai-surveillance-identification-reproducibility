@@ -5,6 +5,10 @@ data/raw/vdem/*.csv
 outputs/*
 !outputs/reproducibility_check_report.md
 !outputs/reproducibility_check_report.json
+# Los registros de ejecucion si se distribuyen: el README los documenta y
+# el archivo de Zenodo los incluye
+!outputs/logs/
+!outputs/logs/*.log
 __pycache__/
 *.pyc
 

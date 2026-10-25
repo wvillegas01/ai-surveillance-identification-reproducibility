@@ -190,26 +190,62 @@
   },
   {
    "check": "Specification analysis: configurations",
-   "actual": 75,
-   "expected": 75,
+   "actual": 60,
+   "expected": 60,
    "passed": true
   },
   {
    "check": "Specification analysis: negative estimates",
-   "actual": 65,
-   "expected": 65,
+   "actual": 51,
+   "expected": 51,
    "passed": true
   },
   {
    "check": "Specification analysis: median",
-   "actual": -0.0196,
-   "expected": -0.02,
+   "actual": -0.0219,
+   "expected": -0.022,
    "passed": true
   },
   {
    "check": "Specification analysis: intervals excluding zero",
    "actual": 0,
    "expected": 0,
+   "passed": true
+  },
+  {
+   "check": "Support-restricted equivalence, quarter step",
+   "actual": 5,
+   "expected": 5,
+   "passed": true
+  },
+  {
+   "check": "Support-restricted equivalence, fifth step",
+   "actual": 3,
+   "expected": 3,
+   "passed": true
+  },
+  {
+   "check": "Support-restricted equivalence, tenth SD",
+   "actual": 0,
+   "expected": 0,
+   "passed": true
+  },
+  {
+   "check": "Support-restricted SE ratio, median",
+   "actual": 2.4828,
+   "expected": 2.48,
+   "passed": true
+  },
+  {
+   "check": "Support-restricted bootstrap: usable replications",
+   "actual": 2000,
+   "expected": 2000,
+   "passed": true
+  },
+  {
+   "check": "Support-restricted bootstrap: replications losing a cohort",
+   "actual": 1,
+   "expected": 1,
    "passed": true
   },
   {
@@ -255,6 +291,62 @@
    "passed": true
   },
   {
+   "check": "Treatment-date shifts estimated (years earlier)",
+   "actual": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "expected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "passed": true
+  },
+  {
+   "check": "Date shifts of one to six years: outcomes with p < 0.05",
+   "actual": 0,
+   "expected": 0,
+   "passed": true
+  },
+  {
+   "check": "Lag-informed dates: treated countries",
+   "actual": 79,
+   "expected": 79,
+   "passed": true
+  },
+  {
+   "check": "Lag-informed dates: filtering ATT",
+   "actual": 0.0138,
+   "expected": 0.014,
+   "passed": true
+  },
+  {
+   "check": "Countries with stated earlier deployment excluded: treated countries",
+   "actual": 75,
+   "expected": 75,
+   "passed": true
+  },
+  {
+   "check": "Countries with stated earlier deployment excluded: filtering ATT",
+   "actual": 0.02,
+   "expected": 0.02,
+   "passed": true
+  },
+  {
+   "check": "Lag-informed analyses: outcomes with p < 0.05",
+   "actual": 0,
+   "expected": 0,
+   "passed": true
+  },
+  {
    "check": "Max |differences 0.1.2 - 0.3.0| across cells",
    "actual": 0.0,
    "expected": 0.0,
@@ -284,6 +376,11 @@
    "detail": "max abs numeric difference 0.00e+00"
   },
   {
+   "file": "bootstrap_auditoria.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
    "file": "cifras_manuscrito.csv",
    "passed": true,
    "detail": "max abs numeric difference 0.00e+00"
@@ -304,7 +401,17 @@
    "detail": "max abs numeric difference 0.00e+00"
   },
   {
+   "file": "desfase_informado.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
    "file": "desplazamiento_fechas.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "equivalencia_soporte_restringido.csv",
    "passed": true,
    "detail": "max abs numeric difference 0.00e+00"
   },
@@ -365,6 +472,11 @@
   },
   {
    "file": "propension_por_pais.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "referencia_margenes.csv",
    "passed": true,
    "detail": "max abs numeric difference 0.00e+00"
   },

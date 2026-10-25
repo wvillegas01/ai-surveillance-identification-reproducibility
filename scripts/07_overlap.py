@@ -26,7 +26,8 @@ from scipy import stats
 import common as rc
 
 L = rc.Log("20e_solapamiento")
-B = 499
+B = 2000   # el remuestreo estratificado tiene colas: 499 dejaba
+           # un error Monte Carlo de hasta 3x entre semillas
 
 
 def logit_ps(t, X):
@@ -181,28 +182,47 @@ def main():
                 filas_.append((g, b, t, float(np.mean(dy[sel_t] - pred)), int(sel_t.sum())))
         return pd.DataFrame(filas_, columns=["cohort", "base", "time", "att", "n_tr"])
 
+    # Remuestreo ESTRATIFICADO por cohorte. El conjunto perdia la cohorte de
+    # 2015, que retiene un solo pais tratado, en cerca del 38% de las replicas,
+    # y la agregacion corria entonces sobre cinco cohortes: el estimando
+    # cambiaba dentro del propio bootstrap. Estratificando, las seis cohortes
+    # estan presentes en todas las replicas. Dentro de una cohorte de un solo
+    # pais el remuestreo no genera variacion, lo que es una propiedad de la
+    # submuestra y se declara en el manuscrito.
     rng = np.random.default_rng(20261011)
-    tr_p = np.array(retenidos)
+    estratos = [np.array(v) for v in keep_tr.values() if v]
     ct_p = np.array(sorted(set(sum(keep_ct.values(), []))))
+    n_coh = sum(1 for v in keep_tr.values() if v)
+    L("  remuestreo estratificado por cohorte: %s tratados por estrato"
+      % ", ".join(str(len(e)) for e in estratos))
     for var, lab in rc.INDICADORES:
         cel = estimar_rest(d, var)
         if cel.empty:
             continue
         att = rc.agregar_simple(cel)
-        sims = []
+        sims, incompletas, fallos = [], 0, 0
         for _b in range(B):
-            u = np.r_[rng.choice(tr_p, len(tr_p)), rng.choice(ct_p, len(ct_p))]
+            u = np.r_[np.concatenate([rng.choice(e, len(e)) for e in estratos]),
+                      rng.choice(ct_p, len(ct_p))]
             try:
-                sims.append(rc.agregar_simple(estimar_rest(d, var, u)))
+                c2 = estimar_rest(d, var, u)
+                if c2.cohort.nunique() < n_coh:
+                    incompletas += 1
+                sims.append(rc.agregar_simple(c2))
             except Exception:
-                pass
+                fallos += 1
         se = float(np.std(sims, ddof=1))
         rest.append(dict(variable=var, etiqueta=lab, n_tratados=len(retenidos),
                          n_cohortes=cel.cohort.nunique(), ATT=att, SE=se,
                          IC_inf=att - 1.96 * se, IC_sup=att + 1.96 * se,
-                         p=2 * (1 - stats.norm.cdf(abs(att / se)))))
-        L("  %-27s ATT %+.3f (EE boot %.3f) p=%.3f | %d cohortes"
-          % (lab, att, se, rest[-1]["p"], cel.cohort.nunique()))
+                         p=2 * (1 - stats.norm.cdf(abs(att / se))),
+                         replicas_solicitadas=B, replicas_usables=len(sims),
+                         replicas_incompletas=incompletas, replicas_fallidas=fallos,
+                         error_montecarlo=se / np.sqrt(2 * (len(sims) - 1))))
+        L("  %-27s ATT %+.3f (EE boot %.3f) p=%.3f | %d cohortes | %d/%d "
+          "replicas usables, %d incompletas"
+          % (lab, att, se, rest[-1]["p"], cel.cohort.nunique(),
+             len(sims), B, incompletas))
     pd.DataFrame(rest).to_csv(os.path.join(rc.OUT, "soporte_restringido.csv"), index=False)
     pd.DataFrame([dict(cohorte=g, tratados_retenidos="|".join(keep_tr[g]),
                        n_comparacion=len(keep_ct[g])) for g in keep_tr]).to_csv(

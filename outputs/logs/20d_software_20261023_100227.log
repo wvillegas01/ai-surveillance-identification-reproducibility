@@ -1,0 +1,76 @@
+[10:02:22] === 20d — comparación de implementaciones ===
+[10:02:22] Python 3.12.3 | differences 0.3.0 | csdid 0.4.2 | pandas 3.0.6 | numpy 2.5.4 | statsmodels 0.15.0
+[10:02:22] 
+[10:02:22] PANEL enviada: 164 países, 87 tratados
+[10:02:24]   reg:
+[10:02:24]     v012    celdas 176 | vacías   0 | cohortes vacías []
+[10:02:24]     v030    celdas 176 | vacías   0 | cohortes vacías []
+[10:02:24]     csdid   celdas 176 | vacías   0 | cohortes vacías []
+[10:02:24]     manual  celdas 176 | vacías   0 | cohortes vacías []
+[10:02:24]     |v012 - v030| máx 1.91e-12 en 176 celdas comunes
+[10:02:24]     |v030 - csdid| máx 0.00e+00 en 176 celdas comunes
+[10:02:24]     |v030 - manual| máx 3.98e-12 en 176 celdas comunes
+[10:02:24]     avisos de csdid: 1× UserWarning: Be aware that there are some small groups in your dataset.
+  Check groups: 2012,2013,2015,; 1× UserWarning: Not returning pre-test Wald statistic due to singular covariance matrix
+[10:02:24]     avisos de differences 0.3.0: 0
+[10:02:24]     csdid aggte(na_rm=False): agrega, ATT medio -0.1714
+[10:02:24]     csdid aggte(na_rm=True): agrega, ATT medio -0.1714
+[10:02:24]     differences 0.3.0 aggregate('event'): agrega sin aviso, ATT medio posterior -0.1714
+[10:02:25]   dr:
+[10:02:25]     v012    celdas  88 | vacías  88 | cohortes vacías [np.int64(2012), np.int64(2013), np.int64(2015), np.int64(2016)]
+[10:02:25]     v030    celdas  88 | vacías  88 | cohortes vacías [np.int64(2012), np.int64(2013), np.int64(2015), np.int64(2016)]
+[10:02:25]     csdid   celdas  88 | vacías  88 | cohortes vacías [np.int64(2012), np.int64(2013), np.int64(2015), np.int64(2016)]
+[10:02:25]     |v012 - v030| máx 3.41e-13 en 88 celdas comunes
+[10:02:25]     |v030 - csdid| máx 5.55e-17 en 88 celdas comunes
+[10:02:25]     avisos de csdid: 1× UserWarning: Be aware that there are some small groups in your dataset.
+  Check groups: 2012,2013,2015,; 1× UserWarning: overlap condition violated for group 2012 in time period 2001; 1× UserWarning: overlap condition violated for group 2012 in time period 2002; 1× UserWarning: overlap condition violated for group 2012 in time period 2003
+[10:02:25]     avisos de differences 0.3.0: 0
+[10:02:25]     csdid aggte(na_rm=False): SE NIEGA -> Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+[10:02:25]     csdid aggte(na_rm=True): agrega, ATT medio -0.2664
+[10:02:25]     differences 0.3.0 aggregate('event'): agrega sin aviso, ATT medio posterior -0.2664
+[10:02:25]   condiciones del logit de propensión por cohorte:
+[10:02:25]     2012 n= 6 separación=False ps=1 en 2 tratados | sobre el máximo de la comparación 4
+[10:02:25]     2013 n= 4 separación=True  ps=1 en 2 tratados | sobre el máximo de la comparación 4
+[10:02:25]     2014 n=18 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 4
+[10:02:25]     2015 n= 9 separación=False ps=1 en 1 tratados | sobre el máximo de la comparación 3
+[10:02:25]     2016 n=18 separación=False ps=1 en 1 tratados | sobre el máximo de la comparación 5
+[10:02:25]     2017 n= 9 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 1
+[10:02:25]     2018 n=14 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 2
+[10:02:25]     2019 n= 9 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 1
+[10:02:25] 
+[10:02:25] PANEL corregida: 158 países, 81 tratados
+[10:02:26]   reg:
+[10:02:26]     v012    celdas 176 | vacías   0 | cohortes vacías []
+[10:02:26]     v030    celdas 176 | vacías   0 | cohortes vacías []
+[10:02:26]     csdid   celdas 176 | vacías   0 | cohortes vacías []
+[10:02:26]     manual  celdas 176 | vacías   0 | cohortes vacías []
+[10:02:26]     |v012 - v030| máx 4.39e-15 en 176 celdas comunes
+[10:02:26]     |v030 - csdid| máx 0.00e+00 en 176 celdas comunes
+[10:02:26]     |v030 - manual| máx 3.16e-15 en 176 celdas comunes
+[10:02:26]     avisos de csdid: 1× UserWarning: Be aware that there are some small groups in your dataset.
+  Check groups: 2012,2013,2014,; 1× UserWarning: Not returning pre-test Wald statistic due to singular covariance matrix
+[10:02:26]     avisos de differences 0.3.0: 0
+[10:02:26]     csdid aggte(na_rm=False): agrega, ATT medio -0.0006
+[10:02:26]     csdid aggte(na_rm=True): agrega, ATT medio -0.0006
+[10:02:26]     differences 0.3.0 aggregate('event'): agrega sin aviso, ATT medio posterior -0.0006
+[10:02:27]   dr:
+[10:02:27]     v012    celdas 132 | vacías  44 | cohortes vacías [np.int64(2012), np.int64(2013)]
+[10:02:27]     v030    celdas 132 | vacías  44 | cohortes vacías [np.int64(2012), np.int64(2013)]
+[10:02:27]     csdid   celdas 132 | vacías  44 | cohortes vacías [np.int64(2012), np.int64(2013)]
+[10:02:27]     |v012 - v030| máx 1.78e-15 en 132 celdas comunes
+[10:02:27]     |v030 - csdid| máx 4.16e-17 en 132 celdas comunes
+[10:02:27]     avisos de csdid: 1× UserWarning: Be aware that there are some small groups in your dataset.
+  Check groups: 2012,2013,2014,; 1× UserWarning: overlap condition violated for group 2012 in time period 2001; 1× UserWarning: overlap condition violated for group 2012 in time period 2002; 1× UserWarning: overlap condition violated for group 2012 in time period 2003
+[10:02:27]     avisos de differences 0.3.0: 0
+[10:02:27]     csdid aggte(na_rm=False): SE NIEGA -> Missing values at att_gt found. If you want to remove these, set `na_rm = True`.
+[10:02:27]     csdid aggte(na_rm=True): agrega, ATT medio -0.0587
+[10:02:27]     differences 0.3.0 aggregate('event'): agrega sin aviso, ATT medio posterior -0.0587
+[10:02:27]   condiciones del logit de propensión por cohorte:
+[10:02:27]     2012 n= 5 separación=True  ps=1 en 4 tratados | sobre el máximo de la comparación 5
+[10:02:27]     2013 n= 4 separación=True  ps=1 en 1 tratados | sobre el máximo de la comparación 4
+[10:02:27]     2014 n= 8 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 2
+[10:02:27]     2015 n= 7 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 6
+[10:02:27]     2016 n=18 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 13
+[10:02:27]     2017 n=12 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 8
+[10:02:27]     2018 n=15 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 7
+[10:02:27]     2019 n=12 separación=False ps=1 en 0 tratados | sobre el máximo de la comparación 2
