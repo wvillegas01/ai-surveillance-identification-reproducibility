@@ -185,14 +185,18 @@ def main():
     # Remuestreo ESTRATIFICADO por cohorte. El conjunto perdia la cohorte de
     # 2015, que retiene un solo pais tratado, en cerca del 38% de las replicas,
     # y la agregacion corria entonces sobre cinco cohortes: el estimando
-    # cambiaba dentro del propio bootstrap. Estratificando, las seis cohortes
-    # estan presentes en todas las replicas. Dentro de una cohorte de un solo
-    # pais el remuestreo no genera variacion, lo que es una propiedad de la
-    # submuestra y se declara en el manuscrito.
+    # cambiaba dentro del propio bootstrap. Estratificando, los tratados de las
+    # seis cohortes se extraen en todas las replicas, pero una replica puede
+    # extraer pocos comparadores en una cohorte y dejarla sin estimar: esas se
+    # conservan, se agregan sobre las cohortes que quedan y se marcan, para que
+    # el script 19 pueda comparar ambos conjuntos. Dentro de una cohorte de un
+    # solo pais el remuestreo no genera variacion, lo que es una propiedad de
+    # la submuestra y se declara en el manuscrito.
     rng = np.random.default_rng(20261011)
     estratos = [np.array(v) for v in keep_tr.values() if v]
     ct_p = np.array(sorted(set(sum(keep_ct.values(), []))))
     n_coh = sum(1 for v in keep_tr.values() if v)
+    replicas = []
     L("  remuestreo estratificado por cohorte: %s tratados por estrato"
       % ", ".join(str(len(e)) for e in estratos))
     for var, lab in rc.INDICADORES:
@@ -201,29 +205,42 @@ def main():
             continue
         att = rc.agregar_simple(cel)
         sims, incompletas, fallos = [], 0, 0
+        completa = []
         for _b in range(B):
             u = np.r_[np.concatenate([rng.choice(e, len(e)) for e in estratos]),
                       rng.choice(ct_p, len(ct_p))]
             try:
                 c2 = estimar_rest(d, var, u)
-                if c2.cohort.nunique() < n_coh:
+                entera = c2.cohort.nunique() == n_coh
+                if not entera:
                     incompletas += 1
+                completa.append(entera)
                 sims.append(rc.agregar_simple(c2))
             except Exception:
                 fallos += 1
         se = float(np.std(sims, ddof=1))
+        # el editor pregunta si las replicas de composicion incompleta mueven
+        # el resultado: se guarda tambien el EE de las que conservan las seis
+        sc = [v for v, e in zip(sims, completa) if e]
+        se_completas = float(np.std(sc, ddof=1)) if len(sc) > 2 else float("nan")
+        replicas.extend(dict(variable=var, replica=k, valor=float(v),
+                             composicion_completa=bool(e))
+                        for k, (v, e) in enumerate(zip(sims, completa)))
         rest.append(dict(variable=var, etiqueta=lab, n_tratados=len(retenidos),
                          n_cohortes=cel.cohort.nunique(), ATT=att, SE=se,
                          IC_inf=att - 1.96 * se, IC_sup=att + 1.96 * se,
                          p=2 * (1 - stats.norm.cdf(abs(att / se))),
                          replicas_solicitadas=B, replicas_usables=len(sims),
                          replicas_incompletas=incompletas, replicas_fallidas=fallos,
+                         SE_solo_completas=se_completas, n_completas=len(sc),
                          error_montecarlo=se / np.sqrt(2 * (len(sims) - 1))))
         L("  %-27s ATT %+.3f (EE boot %.3f) p=%.3f | %d cohortes | %d/%d "
           "replicas usables, %d incompletas"
           % (lab, att, se, rest[-1]["p"], cel.cohort.nunique(),
              len(sims), B, incompletas))
     pd.DataFrame(rest).to_csv(os.path.join(rc.OUT, "soporte_restringido.csv"), index=False)
+    pd.DataFrame(replicas).to_csv(
+        os.path.join(rc.OUT, "soporte_restringido_replicas.csv"), index=False)
     pd.DataFrame([dict(cohorte=g, tratados_retenidos="|".join(keep_tr[g]),
                        n_comparacion=len(keep_ct[g])) for g in keep_tr]).to_csv(
         os.path.join(rc.OUT, "soporte_restringido_composicion.csv"), index=False)

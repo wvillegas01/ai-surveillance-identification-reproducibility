@@ -26,7 +26,7 @@ PASOS = ["00_verify_sources.py", "01_build_panel.py", "02_treatment_dating.py",
          "09_evidence_table.py", "10_operational_coding.py", "11_operational_sensitivity.py",
          "12_manuscript_numbers.py", "13_figures.py", "14_supplementary.py",
          "16_bootstrap_audit.py", "17_separation_diagnostic.py",
-         "18_margin_benchmarks.py"]
+         "18_margin_benchmarks.py", "19_complete_composition.py"]
 
 
 def main():

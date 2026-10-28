@@ -61,7 +61,7 @@ Results folder checked: `outputs\results`
 - `PASS` Max |differences 0.1.2 - 0.3.0| across cells: actual=0.0 expected=0.0
 - `PASS` Max |differences 0.3.0 - csdid| across cells: actual=0.0 expected=0.0
 
-## Regenerated tables vs reference (53 files)
+## Regenerated tables vs reference (55 files)
 
 - `PASS` apendice_cohortes.csv: max abs numeric difference 0.00e+00
 - `PASS` balance_agrupado.csv: max abs numeric difference 0.00e+00
@@ -69,6 +69,7 @@ Results folder checked: `outputs\results`
 - `PASS` bootstrap_auditoria.csv: max abs numeric difference 0.00e+00
 - `PASS` cifras_manuscrito.csv: max abs numeric difference 0.00e+00
 - `PASS` codificacion_estado_operativo.csv: max abs numeric difference 0.00e+00
+- `PASS` comparacion_replicas_completas.csv: max abs numeric difference 0.00e+00
 - `PASS` descomposicion.csv: max abs numeric difference 0.00e+00
 - `PASS` desfase_despliegue.csv: max abs numeric difference 0.00e+00
 - `PASS` desfase_informado.csv: max abs numeric difference 0.00e+00
@@ -95,6 +96,7 @@ Results folder checked: `outputs\results`
 - `PASS` soporte_por_especificacion.csv: max abs numeric difference 0.00e+00
 - `PASS` soporte_restringido.csv: max abs numeric difference 0.00e+00
 - `PASS` soporte_restringido_composicion.csv: max abs numeric difference 0.00e+00
+- `PASS` soporte_restringido_replicas.csv: max abs numeric difference 0.00e+00
 - `PASS` tabla_maestra_v2.csv: max abs numeric difference 0.00e+00
 - `PASS` twfe_vs_escalonado.csv: max abs numeric difference 0.00e+00
 - `PASS` validez_v2.csv: max abs numeric difference 0.00e+00

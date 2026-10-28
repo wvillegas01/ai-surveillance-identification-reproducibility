@@ -391,6 +391,11 @@
    "detail": "max abs numeric difference 0.00e+00"
   },
   {
+   "file": "comparacion_replicas_completas.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
    "file": "descomposicion.csv",
    "passed": true,
    "detail": "max abs numeric difference 0.00e+00"
@@ -517,6 +522,11 @@
   },
   {
    "file": "soporte_restringido_composicion.csv",
+   "passed": true,
+   "detail": "max abs numeric difference 0.00e+00"
+  },
+  {
+   "file": "soporte_restringido_replicas.csv",
    "passed": true,
    "detail": "max abs numeric difference 0.00e+00"
   },
